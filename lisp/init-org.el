@@ -187,4 +187,21 @@
 (add-hook 'org-mode-hook   
       (lambda () (setq truncate-lines nil))) 
 
+
+;; active Babel languages
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((R . t)
+   (emacs-lisp . t)
+   (python . t)
+   (maxima . t)
+   (ditaa . t)
+   (python . t)
+   (sh . t)
+   (latex . t)
+   (plantuml . t)
+   (gnuplot . t)
+   (C . t)
+  ))
+
 (provide 'init-org)

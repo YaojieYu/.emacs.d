@@ -1,0 +1,9 @@
+;;; Automatically generated on Fri Mar 17 09:56:37 2017
+;;; Invoked by yu@yu using 24.4.1
+(setq-default session-file-alist '(("~/.emacs.d/lisp/init-fonts.el" 1 15 1 nil nil 1206 (overwrite-mode)) ("~/org/gtd.org" 74936 116846 1 nil nil 72 (overwrite-mode)) ("~/org/gtd.org_archive" 170307 266 1 nil nil 170307 (overwrite-mode))))
+(setq-default file-name-history '(#("/home/yu/.emacs.d/lisp/init-fonts.el" 23 31 (face flx-highlight-face)) "/home/yu/org/gtd.org" "~/.emacs_d_bak4/custom.el" "~/org/gtd.org_archive" "~/.emacs.d/company-statistics-cache.el" "~/org/gtd.org" "~/.emacs.d/recentf"))
+(setq-default command-history '((cua-mode (quote toggle)) (find-file #("/home/yu/.emacs.d/lisp/init-fonts.el" 23 31 ...)) (find-file "/home/yu/org/gtd.org") (find-file "/home/yu/.emacs.d/lisp/init-fonts.el") (eval-buffer) (ibuffer-find-file "/home/yu/.emacs_d_bak4/custom.el" t) (ibuffer-find-file "/home/yu/org/gtd.org" t) (linum-mode (quote toggle))))
+(setq-default ido-file-history '("init-fonts.el" "custom.el" "gtd.org" "test.org" "1-s2.0-S0889974602904494-main.pdf"))
+(setq-default minibuffer-history '("cua-mode" "eval-buffer" "linum-mode" "package-list-packages" "package-install"))
+(setq-default occur-collect-regexp-history '("\\1"))
+(setq-default smex-history '(cua-mode eval-buffer linum-mode customize-option package-install shell color-theme-select))
