@@ -67,6 +67,7 @@
   (require 'init-frame-hooks)
   ;; any file use flyspell should be initialized after init-spelling.el
   ;; actually, I don't know which major-mode use flyspell.
+  (require 'init-fonts)
   (require 'init-spelling)
   (require 'init-xterm)
   (require 'init-gui-frames)
@@ -135,7 +136,7 @@
   (setq idle-require-idle-delay 3)
   (setq idle-require-symbols '(init-misc-lazy
                                init-which-func
-                               init-fonts
+
                                init-hs-minor-mode
                                init-textile
                                init-csv
@@ -213,6 +214,9 @@
 (cua-mode 1)
 (global-undo-tree-mode)
 (put 'erase-buffer 'disabled nil)
+
+(setq make-backup-files nil)
+
 
 (setq gc-cons-threshold best-gc-cons-threshold)
 ;;; Local Variables:
