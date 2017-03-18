@@ -2,24 +2,34 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/yu/working/LES&nature_convection/" . "R-B/")
+ ("/home/yu/working/" . "LES&nature_convection/")
  ("/home/yu/" . "org/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
  "/home/yu/org/"
+ "/home/yu/working/LES&nature_convection/R-B/"
 )
 
 ;; ----- ido-work-file-list -----
 (
  "gtd.org"
+ "input"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/yu/org/" (22731 14268 80517 795000) "mobileorg.org" "./" "knowlege.org" "gtd.org" "document/" "../" "gtd.org~" "knowledge/" "archive/" "notes.org" "ltxpng/" "diary")
+ ("/home/yu/org/" (22732 43649 710283 96000) "mobileorg.org" "./" "knowlege.org" "gtd.org" "document/" "../" "gtd.org~" "knowledge/" "gtd.org_archive" "archive/" "notes.org" "ltxpng/" "diary")
 
- ("/home/yu/" (22731 14452 39934 212000) "FlurryPP/" ".viminfo" ".aspell.en.prepl" ".lyx/" ".wine/" ".nvm/" ".emacs.d/" ".sogouinput/" "OpenFOAM-4.x/" ".npm/" "Qt/" ".Xauthority" ".Mathematica/" ".xsession-errors" ".backups/" ".oracle_jre_usage/" ".wiznote/" ".newsrc.eld" ".gmsh-errors" ".pip/" ".emacs_d_bak4/" ".allinea/" ".clion11/" ".profile" ".bookmarks" ".sangfor/" ".bash_logout" ".visit/" ".macromedia/" ".emacs.d_bak3/" ".emacs.d_bak/" ".gnuplot_history" ".texmf-var/" ".sudo_as_admin_successful" ".cache/" ".bash_history" ".gem/" ".config/" ".bashrc~" ".emacs.d_bak2/" ".codeblocks/" ".eclipse/" ".adobe/" ".gconf/" ".bashrc" ".python_history" ".matlab/" ".presage/" ".gnupg/" ".#date.org" ".yEd/" ".fonts/" ".aspell.en.pws" ".pki/" ".jupyter/" ".hplip/" ".subversion/" ".mplayer/" "org/" ".gnome2_private/" "HiFiLES-solver/" ".gnus" ".gnome/" "Documents/" ".gitconfig" ".intel/" ".ssh/" ".history" ".authinfo" ".notes" ".emacs.keyfreq" ".ICEauthority" ".pam_environment" ".thunderbird/" ".local/" "CFD/" ".dbus/" ".kde/" ".octave_hist" ".newsrc" ".gstreamer-0.10/" ".xinputrc" "rjsupplicant/" ".fltk/" ".ddd/" ".swt/" ".xsel.log" ".gmshrc" "Trash/" "HiFiLES-solver-orgin/" "Downloads/" "FlurryPP-master/" ".nutstore/" ".xsession-errors.old" ".nv/" ".gnome2/" ".java/" ".zotero/" ".kingsoft/" ".mozilla/" "working/" ".flexlmrc" ".pdf" ".pencil/" ".smex-items" ".ipython/" ".designer/" "../" "./")
+ ("/home/yu/" (22732 43702 382791 417000) "FlurryPP/" ".viminfo" ".aspell.en.prepl" ".lyx/" ".wine/" ".nvm/" ".emacs.d/" ".sogouinput/" "OpenFOAM-4.x/" ".npm/" "Qt/" ".Xauthority" ".Mathematica/" ".xsession-errors" ".backups/" ".oracle_jre_usage/" ".wiznote/" ".newsrc.eld" ".gmsh-errors" ".pip/" ".emacs_d_bak4/" ".allinea/" ".clion11/" ".profile" ".bookmarks" ".sangfor/" ".bash_logout" ".visit/" ".macromedia/" ".emacs.d_bak3/" ".emacs.d_bak/" ".gnuplot_history" ".texmf-var/" ".sudo_as_admin_successful" ".cache/" ".bash_history" ".gem/" ".config/" ".bashrc~" ".emacs.d_bak2/" ".codeblocks/" ".eclipse/" ".adobe/" ".gconf/" ".bashrc" ".python_history" ".matlab/" ".presage/" ".gnupg/" ".#date.org" ".yEd/" ".fonts/" ".aspell.en.pws" ".pki/" ".jupyter/" ".hplip/" ".subversion/" ".mplayer/" "org/" ".gnome2_private/" "HiFiLES-solver/" "#test.org#" ".gnus" ".gnome/" "Documents/" ".gitconfig" ".intel/" ".ssh/" ".history" ".authinfo" ".notes" ".emacs.keyfreq" ".ICEauthority" ".pam_environment" ".thunderbird/" ".local/" "CFD/" ".dbus/" ".kde/" ".octave_hist" ".newsrc" ".gstreamer-0.10/" ".xinputrc" "rjsupplicant/" "ThirdParty-4.x/" ".fltk/" ".ddd/" ".swt/" ".xsel.log" ".gmshrc" "Trash/" "HiFiLES-solver-orgin/" "Downloads/" "FlurryPP-master/" ".nutstore/" ".xsession-errors.old" ".nv/" ".gnome2/" ".java/" ".zotero/" ".kingsoft/" ".mozilla/" "working/" ".emacs.d_bak5/" ".flexlmrc" ".pdf" ".pencil/" ".smex-items" ".ipython/" ".designer/" "../" "./")
+
+ ("/home/yu/working/LES&nature_convection/R-B/" (22731 42773 238319 23000) "R-B.geo" "input" "new/" "R-B.msh" "../" "./")
+
+ ("/home/yu/working/LES&nature_convection/" (22726 24035 813354 206000) "R-B/" "paper/" "../" "./")
+
+ ("/home/yu/working/" (22727 37898 23412 256000) "./" "other/" "high_order/" "linear algbra/" "LES&nature_convection/" "nanofluid/" "testgit/" "pde/" "Preconditioning/" "../" "LES/" "time_spctral/" "Adaptive_grid/")
 
  ("/home/yu/.emacs.d/lisp/" (22731 13851 118116 633000) "init-windows.el" "init-chinese-pyim.el" "init-doxygen.el" "init-sessions.el" "init-hs-minor-mode.el" "init-python-mode.el" "init-javascript.el" "./" "init-workgroups2.el" "init-markdown.el" "init-artbollocks-mode.el" "init-httpd.el" "init-which-func.el" "init-misc-lazy.el" "init-elpa.el" "init-semantic.el" "init-cc-mode.el" "init-spelling.el" "init-emacs-w3m.el" "init-uniquify.el" "init-utils.el" "init-lua-mode.el" ".#init-org.el" "init-ctags.el" "init-org.el" "init-css.el" "init-org.el~" "init-org-mime.el" "init-flymake.el" "init-exec-path.el" "init-erlang.el" "init-ido.el" "init-git.el" "init-fonts.el" "init-modeline.el" "init-sh.el" "init-gnus.el" "init-lisp.el" "init-clipboard.el" "init-emacspeak.el" "init-bbdb.el" "init-linum-mode.el" "init-cperl-mode.el" "init-web-mode.el" "init-textile.el" "init-keyfreq.el" "init-crontab.el" "init-xterm.el" "init-company.el" "init-ibuffer.el" "init-haskell.el" "../" "init-dired.el" "init-ivy.el" "init-hippie-expand.el" "init-smex.el" "init-ruby-mode.el" "init-writting.el" "init-compat.el" "init-zencoding-mode.el" "init-hydra.el" "init-locales.el" "init-term-mode.el" "init-evil.el" "init-csv.el" "init-pomodoro.el" "init-yasnippet.el" "init-moz.el" "init-elisp.el" "init-site-lisp.el" "init-gui-frames.el" "init-color-theme.el" "init-gud.el" "init-gtags.el" "init-misc.el" "init-frame-hooks.el" "init-slime.el")
 )

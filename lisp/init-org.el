@@ -203,5 +203,8 @@
    (gnuplot . t)
    (C . t)
   ))
+;; Agenda views
+(setq-default org-agenda-clockreport-parameter-plist '(:link t :maxlevel 3))
+(global-set-key (kbd "C-c a") 'org-agenda)
 
 (provide 'init-org)

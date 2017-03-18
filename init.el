@@ -1,5 +1,12 @@
 ;; -*- coding: utf-8 -*-
 ;(defvar best-gc-cons-threshold gc-cons-threshold "Best default gc threshold value. Should't be too big.")
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
 (defvar best-gc-cons-threshold 4000000 "Best default gc threshold value. Should't be too big.")
 ;; don't GC during startup to save time
 (setq gc-cons-threshold most-positive-fixnum)
@@ -160,9 +167,42 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(ansi-color-faces-vector
+   [default bold shadow italic underline bold bold-italic bold])
+ '(ansi-color-names-vector
+   (vector "#eaeaea" "#d54e53" "#b9ca4a" "#e7c547" "#7aa6da" "#c397d8" "#70c0b1" "#424242"))
+ '(custom-enabled-themes (quote (sanityinc-solarized-light)))
+ '(custom-safe-themes
+   (quote
+    ("4cf3221feff536e2b3385209e9b9dc4c2e0818a69a1cdb4b522756bcdf4e00a4" "1b8d67b43ff1723960eb5e0cba512a2c7a2ad544ddb2533a90101fd1852b426e" "bb08c73af94ee74453c90422485b29e5643b73b05e8de029a6909af6a3fb3f58" default)))
+ '(fci-rule-color "#424242")
  '(git-gutter:handled-backends (quote (svn hg git)))
+ '(org-agenda-files (quote ("~/org/gtd.org")))
  '(safe-local-variable-values (quote ((lentic-init . lentic-orgel-org-init))))
- '(session-use-package t nil (session)))
+ '(session-use-package t nil (session))
+ '(vc-annotate-background nil)
+ '(vc-annotate-color-map
+   (quote
+    ((20 . "#d54e53")
+     (40 . "#e78c45")
+     (60 . "#e7c547")
+     (80 . "#b9ca4a")
+     (100 . "#70c0b1")
+     (120 . "#7aa6da")
+     (140 . "#c397d8")
+     (160 . "#d54e53")
+     (180 . "#e78c45")
+     (200 . "#e7c547")
+     (220 . "#b9ca4a")
+     (240 . "#70c0b1")
+     (260 . "#7aa6da")
+     (280 . "#c397d8")
+     (300 . "#d54e53")
+     (320 . "#e78c45")
+     (340 . "#e7c547")
+     (360 . "#b9ca4a"))))
+ '(vc-annotate-very-old-color nil))
+
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -170,12 +210,12 @@
  ;; If there is more than one, they won't work right.
  '(window-numbering-face ((t (:foreground "DeepPink" :underline "DeepPink" :weight bold))) t))
 
+(cua-mode 1)
+(global-undo-tree-mode)
+(put 'erase-buffer 'disabled nil)
+
 (setq gc-cons-threshold best-gc-cons-threshold)
 ;;; Local Variables:
 ;;; no-byte-compile: t
 ;;; End:
-(setq make-backup-files nil)
-(require 'recentf)
-(recentf-mode 1)
-(setq recentf-max-menu-item 4)
-(put 'erase-buffer 'disabled nil)
+

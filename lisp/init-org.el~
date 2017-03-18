@@ -50,7 +50,9 @@
         "xelatex -interaction nonstopmode -output-directory %o %f"))
 (setq org-latex-pdf-process org-latex-to-pdf-process) ;; org v8
 ;; }}
-
+;; 中文换行问题  
+(add-hook 'org-mode-hook   
+      (lambda () (setq truncate-lines nil))) 
 (defun my-setup-odt-org-convert-process ()
   (interactive)
   (let ((cmd "/Applications/LibreOffice.app/Contents/MacOS/soffice"))
@@ -184,5 +186,24 @@
 ;; 中文换行问题  
 (add-hook 'org-mode-hook   
       (lambda () (setq truncate-lines nil))) 
+
+
+;; active Babel languages
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((R . t)
+   (emacs-lisp . t)
+   (python . t)
+   (maxima . t)
+   (ditaa . t)
+   (python . t)
+   (sh . t)
+   (latex . t)
+   (plantuml . t)
+   (gnuplot . t)
+   (C . t)
+   (sed . t)
+   (awk . t)
+  ))
 
 (provide 'init-org)
