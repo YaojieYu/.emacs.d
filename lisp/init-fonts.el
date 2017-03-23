@@ -1,50 +1,68 @@
 (require 'cl)
-;中文与英文字体设置
-;; Setting English Font
-(set-face-attribute
-'default nil :font "Monaco 10")
-;; Chinese Font
-(dolist (charset '(kana han symbol cjk-misc bopomofo))
-(set-fontset-font (frame-parameter nil 'font)
-		  charset
-		  (font-spec :family "文泉驿等宽微米黑" :size 12)))
 
 
-;;(my-set-fontset
-;; "fontset-startup"
-;; '((latin "Monaco -10")       ;; 英文字体
-;;   (han "文泉驿微米黑-12")   ;; 中文字体
-;;   (nil "文泉驿微米黑-12"))) ;; 其它所有字符默认字体
 
-;;(defun font-name-replace-size (font-name new-size)
-;;  (let ((parts (split-string font-name "-")))
-;;    (setcar (nthcdr 7 parts) (format "%d" new-size))
-;;    (mapconcat 'identity parts "-")))
+(defvar rv-font-cjk
+  "WenQuanYi Micro Hei Mono")
+(defvar rv-font-latin
+  "Courier New")
+(defvar rv-font-symbol
+  "DejaVu Sans Mono")
+
+(defvar rv-font-latin-size 11.0)
+(defvar rv-font-cjk-size 13.0)
+
+;;(setq cjk-font "WenQuanYi Micro Hei Mono")
+(setq rv-font-cjk "AR PL New Kai")
+
+;;(unless (equal (frame-parameter nil 'font) "tty")
+;;  (set-frame-font (concat latin-font "-11")))
+
+(defvar rv-font-name "fontset-rv")
+
+(defun rv-font-string ()
+  (concat "-*-" rv-font-latin "-medium-r-normal-*-"
+	    (format "%.0f" rv-font-latin-size)
+	      "-*-*-*-*-*-"
+	        rv-font-name))
+
+;; also hide tool bar
+(setq default-frame-alist
+      `((font . ,rv-font-name)
+        (tool-bar-lines nil)))
+
+(defun rv-font-set (ch fn sz)
+  (set-fontset-font rv-font-name ch
+                    (font-spec
+                     :family fn
+                     :registry 'unicode-bmp
+                     :size sz)))
+
+(defun rv-font-set-cjk (ch)
+  (rv-font-set ch rv-font-cjk rv-font-cjk-size))
+
+(defun rv-font-set-latin (ch)
+  (rv-font-set ch rv-font-latin rv-font-latin-size))
+  
+(defun rv-font-set-symbol (ch)
+  (rv-font-set ch rv-font-symbol rv-font-latin-size))
+
+(create-fontset-from-fontset-spec
+ (rv-font-string))
+
+;; reset all settings
+(rv-font-set-latin 'unicode)
+;; set others
+(rv-font-set-cjk 'han)
+(rv-font-set-cjk 'japanese-jisx0208)
+(rv-font-set-cjk 'japanese-jisx0212)
+;; 0x3000 ~ 0x303F
+(rv-font-set '(12288 . 12351) "Kochi Mincho" rv-font-cjk-size)
+(rv-font-set-symbol '(8000 . 9923))
+(rv-font-set-symbol '(880 . 1024)) ;; part of greek 0x370~0x3FF
+(rv-font-set-symbol '(?“ . ?”))    ;; fullwidth ", 0x201C ~ 0x210D
 
 
-;;(defun increment-default-font-height (delta)
-;;  "Adjust the default font height by DELTA on every frame.
-;;The pixel size of the frame is kept (approximately) the same.
-;;DELTA should be a multiple of 10, in the units used by the
-;;:height face attribute."
-;;  (let* ((new-height (+ (face-attribute 'default :height) delta))
-;;         (new-point-height (/ new-height 10)))
-;;    (dolist (f (frame-list))
-;;      (with-selected-frame f
-        ;; Latest 'set-frame-font supports a "frames" arg, but
-        ;; we cater to Emacs 23 by looping instead.
-;;        (set-frame-font (font-name-replace-size (face-font 'default)
-;;                                                new-point-height)
-;;                        t)))
-;;    (set-face-attribute 'default nil :height new-height)
-;;    (message "default font size is now %d" new-point-height)))
-
-;;(defun increase-default-font-height ()
-;;  (interactive)
-;;  (increment-default-font-height 10))
-
-;;(defun decrease-default-font-height ()
-;;  (interactive)
-;;  (increment-default-font-height -10))
-
+;; if not start neither as server nor in terminal
+(when (eq window-system 'x) (set-frame-font rv-font-name))
 (provide 'init-fonts)

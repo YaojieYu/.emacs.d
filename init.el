@@ -47,27 +47,13 @@
   (require 'init-compat)
   (require 'init-utils)
   (require 'init-site-lisp) ;; Must come before elpa, as it may provide package.el
-
-  ;; Windows configuration, assuming that cygwin is installed at "c:/cygwin"
-  ;; (condition-case nil
-  ;;     (when *win64*
-  ;;       ;; (setq cygwin-mount-cygwin-bin-directory "c:/cygwin/bin")
-  ;;       (setq cygwin-mount-cygwin-bin-directory "c:/cygwin64/bin")
-  ;;       (require 'setup-cygwin)
-  ;;       ;; better to set HOME env in GUI
-  ;;       ;; (setenv "HOME" "c:/cygwin/home/someuser")
-  ;;       )
-  ;;   (error
-  ;;    (message "setup-cygwin failed, continue anyway")
-  ;;    ))
-
   (require 'idle-require)
   (require 'init-elpa)
   (require 'init-exec-path) ;; Set up $PATH
   (require 'init-frame-hooks)
   ;; any file use flyspell should be initialized after init-spelling.el
   ;; actually, I don't know which major-mode use flyspell.
-  (require 'init-fonts)
+;;  (require 'init-fonts)
   (require 'init-spelling)
   (require 'init-xterm)
   (require 'init-gui-frames)
@@ -84,14 +70,9 @@
   (require 'init-git)
   (require 'init-crontab)
   (require 'init-markdown)
-  (require 'init-erlang)
-  (require 'init-javascript)
   (require 'init-org)
   (require 'init-org-mime)
-  (require 'init-css)
   (require 'init-python-mode)
-  (require 'init-haskell)
-  (require 'init-ruby-mode)
   (require 'init-lisp)
   (require 'init-elisp)
   (require 'init-yasnippet)
@@ -104,19 +85,17 @@
   (require 'init-moz)
   (require 'init-gtags)
   ;; use evil mode (vi key binding)
- ;; (require 'init-evil)
+  ;; (require 'init-evil)
   (require 'init-sh)
   (require 'init-ctags)
   (require 'init-bbdb)
-  (require 'init-gnus)
-  (require 'init-lua-mode)
   (require 'init-workgroups2)
   (require 'init-term-mode)
   (require 'init-web-mode)
   (require 'init-slime)
   (require 'init-clipboard)
   (require 'init-company)
-  (require 'init-chinese-pyim) ;; cannot be idle-required
+;;  (require 'init-chinese-pyim) ;; cannot be idle-required
   ;; need statistics of keyfreq asap
   (require 'init-keyfreq)
   (require 'init-httpd)
@@ -135,8 +114,12 @@
   ;; {{ idle require other stuff
   (setq idle-require-idle-delay 3)
   (setq idle-require-symbols '(init-misc-lazy
+;;			       init-erlang
+;;			       init-javascript
+;;			       init-gnus
+;;			       lua-mode
+;;			       init-css
                                init-which-func
-
                                init-hs-minor-mode
                                init-textile
                                init-csv
@@ -146,6 +129,7 @@
                                init-emacspeak
                                init-artbollocks-mode
                                init-semantic))
+
   (idle-require-mode 1) ;; starts loading
   ;; }}
 
@@ -213,12 +197,12 @@
 
 (cua-mode 1)
 (global-undo-tree-mode)
-(put 'erase-buffer 'disabled nil)
 
+(put 'erase-buffer 'disabled nil)
 (setq make-backup-files nil)
 
-
 (setq gc-cons-threshold best-gc-cons-threshold)
+
 ;;; Local Variables:
 ;;; no-byte-compile: t
 ;;; End:
