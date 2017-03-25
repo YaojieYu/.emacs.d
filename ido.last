@@ -2,36 +2,74 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/yu/CFD/FlurryPP/" . "src/")
+ ("/home/yu/CFD/Codes1.1/" . "CFD1D/")
+ ("/home/yu/CFD/Flurry/" . "FlurryPP/")
+ ("/home/yu/CFD/" . "FlurryPP/")
+ ("/home/yu/working/Preconditioning/lid-driven/Flurry/Ma0.05/Re100/" . "p2/")
+ ("/home/yu/working/Preconditioning/lid-driven/Flurry/Ma0.05/" . "Re100/")
+ ("/home/yu/working/Preconditioning/lid-driven/Flurry/" . "Ma0.05/")
+ ("/home/yu/working/Preconditioning/lid-driven/" . "Flurry/")
+ ("/home/yu/working/Preconditioning/" . "lid-driven/")
  ("/home/" . "yu/")
  ("/" . "home/")
  ("/home/yu/working/LES&nature_convection/" . "R-B/")
- ("/home/yu/working/" . "LES&nature_convection/")
- ("/home/yu/" . "org/")
+ ("/home/yu/working/" . "Preconditioning/")
+ ("/home/yu/" . "CFD/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/yu/CFD/FlurryPP/src/"
  "/home/yu/org/"
  "/home/yu/working/LES&nature_convection/R-B/"
 )
 
 ;; ----- ido-work-file-list -----
 (
+ "boundFace.cpp"
  "gtd.org"
+ "flurry.cpp"
  "input"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/yu/working/LES&nature_convection/R-B/" (22736 42135 443177 181000) "horizon/" "new/" "input~" "Ra2000/" "Ra10E6/" "R-B.geo~" "../" "./")
+ ("/home/yu/org/" (22741 54992 712707 170000) "mobileorg.org" "./" "knowlege.org" "gtd.org" "datetree.org" "document/" "../" "gtd.org~" "knowledge/" "gtd.org_archive" "archive/" "notes.org" "ltxpng/" "diary")
 
- ("/home/yu/org/" (22739 36401 133806 175000) "mobileorg.org" "./" "knowlege.org" "gtd.org" "document/" "../" "gtd.org~" "knowledge/" "gtd.org_archive" "archive/" "notes.org" "ltxpng/" "diary")
+ ("/home/yu/" (22741 54983 180643 919000) "FlurryPP/" ".viminfo" ".aspell.en.prepl" ".lyx/" ".wine/" ".nvm/" ".emacs.d/" ".sogouinput/" "OpenFOAM-4.x/" ".npm/" "Qt/" ".Xauthority" ".Mathematica/" ".xsession-errors" ".backups/" ".ecb-tip-of-day.el" ".oracle_jre_usage/" ".launcher.16.1.0.ini" ".wiznote/" ".newsrc.eld" ".gmsh-errors" ".pip/" ".emacs_d_bak4/" ".allinea/" ".clion11/" ".profile" ".bookmarks" ".sangfor/" ".bash_logout" ".visit/" ".macromedia/" ".qt/" ".emacs.d_bak3/" ".emacs.d_bak/" ".gnuplot_history" ".texmf-var/" ".sudo_as_admin_successful" ".cache/" ".bash_history" ".gem/" ".config/" ".bashrc~" ".emacs.d_bak2/" ".codeblocks/" ".eclipse/" ".adobe/" ".gconf/" "ecb-master.zip" ".bashrc" ".python_history" ".matlab/" ".presage/" ".gnupg/" ".#date.org" ".yEd/" ".fonts/" ".aspell.en.pws" ".pki/" ".jupyter/" ".hplip/" ".subversion/" ".mplayer/" "org/" ".gnome2_private/" "HiFiLES-solver/" ".gnus" ".gnome/" "Documents/" ".gitconfig" ".intel/" ".ssh/" ".history" ".authinfo" ".notes" ".emacs.keyfreq" ".ICEauthority" ".pam_environment" ".thunderbird/" ".local/" "CFD/" ".dbus/" ".kde/" ".octave_hist" ".newsrc" ".gstreamer-0.10/" ".xinputrc" "rjsupplicant/" ".ansys/" "ThirdParty-4.x/" "Fluent/" ".fltk/" ".ddd/" ".swt/" ".xsel.log" ".gmshrc" "Trash/" "HiFiLES-solver-orgin/" "shared_files/" "Downloads/" "FlurryPP-master/" ".nutstore/" ".xsession-errors.old" ".nv/" ".gnome2/" ".java/" ".zotero/" ".kingsoft/" ".mozilla/" "working/" ".emacs.d_bak5/" ".flexlmrc" ".pdf" ".pencil/" ".smex-items" "ecb-master/" ".ipython/" ".designer/" "../" "./")
+
+ ("/home/yu/CFD/FlurryPP/src/" (22741 54529 757664 177000) "overFace.cpp" "input.cpp" "./" "ele.cpp" "geo_overset.cpp" "solver.cpp" "polynomials.cpp" "multigrid.cpp" "intFace.cpp" "geo.cpp" "boundFace.cpp" "global.cpp" "solver_overset.cpp" "mpiFace.cpp" "../" "output.cpp" "flux.cpp" "operators.cpp" "funcs.cpp" "face.cpp" "overComm.cpp" "superMesh.cpp" "matrix.cpp" "flurry.cpp" "mesh.cpp" "points.cpp")
+
+ ("/home/yu/CFD/FlurryPP/" (22467 42846 331365 543000) "Flurry.pro" "planning" "./" ".gitignore" "include/" "README.md" "dataPlotter.m" "makefile" "Flurry.cbp" "src/" "tests/" "../" "Flurry.pro.user" "lib/" "bin/" "configfiles/" ".git/" "obj/" "LICENSE")
+
+ ("/home/yu/CFD/Codes1.1/CFD1D/" (21629 53216 172471 0) "./" "._.DS_Store" "SlopeLimitN.m" "minmodB.m" "SlopeLimitLin.m" "minmod.m" "../" "EulerRHS1D.m" "SlopeLimit1.m" "Euler1D.m" "EulerDriver1D.m")
+
+ ("/home/yu/CFD/Codes1.1/" (21629 53218 168585 0) "README" "./" "Grid/" "IsentropicVortex2D.m" "Codes1D/" "TestAll.m" "CFD1D/" "../" "Codes2D/" "CFD2D/" "ServiceRoutines/" "Codes3D/")
+
+ ("/home/yu/CFD/Flurry/FlurryPP/" (22638 645 992386 0) "Flurry.pro" "planning" "./" ".gitignore" "include/" "README.md" "dataPlotter.m" "makefile" "Flurry.cbp" "src/" "tests/" "../" "lib/" "bin/" "configfiles/" ".git/" "obj/" "LICENSE")
+
+ ("/home/yu/CFD/Flurry/" (22728 37624 947608 25000) "FlurryPP/" "./" "../")
+
+ ("/home/yu/CFD/" (22728 37623 699598 695000) "FlurryPP/" "test/" "TauBench-1.1/" "Trilinos-master/" "NASA V&V/" "ftt/" "./" "HiFiLES_IDE/" "tao_manual.pdf" "nodal-dg/" "Understand/" "Trilinos-master.zip" "trash/" ".metadata/" "edu2d-euler-unsteay/" "petsc-3.6.4.tar.gz" "Flurry/" "Codes1.1/" "manual.pdf" "MPI_Euler1D.zip" "scitools/" "HiFiLES-solver/" "../" "PyFR/" "wxmaxima-16.12.2/" "HiFiLES-solver-ef23d47f2463e493363a85b91cf659cd681d583e/" "fftw-3.3.4/" "petsc-3.6.4/" "nudg++.r62/" "FlurryPP-master/" "unstructured_2d/" "testCases-SU2/" "HiFiLES-solver_bak/" "SU2-5.0.0/" "Blasius/" "Report_for_liu/" "SU2-5.0.0.tar.gz" "HiFiLES-solver-ef23d47f2463e493363a85b91cf659cd681d583e.zip")
+
+ ("/home/yu/working/Preconditioning/lid-driven/Flurry/Ma0.05/Re100/p2/" (22741 48239 117734 301000) "./" "origin/" "pre/" "../")
+
+ ("/home/yu/working/Preconditioning/lid-driven/Flurry/Ma0.05/Re100/" (22699 46464 224211 655000) "./" "../" "p2/")
+
+ ("/home/yu/working/Preconditioning/lid-driven/Flurry/Ma0.05/" (22741 6962 900258 201000) "Re3200/" "Re10000/" "./" "Re100/" "Re7500/" "Re5000/" "Re400/" "../")
+
+ ("/home/yu/working/Preconditioning/lid-driven/Flurry/" (22699 45951 304356 206000) "./" "Ma0.01/" "../" "Ma0.05/")
+
+ ("/home/yu/working/Preconditioning/lid-driven/" (22699 46262 538770 742000) "./" "HiFiLES/" "Flurry/" "../" "Paper/" "SU2/")
+
+ ("/home/yu/working/Preconditioning/" (22699 46068 721301 865000) "backstep/" "./" "lid-driven/" "Poiseuille/" "couette/" "../" "paper/")
+
+ ("/home/yu/working/LES&nature_convection/R-B/" (22736 42135 443177 181000) "horizon/" "new/" "input~" "Ra2000/" "Ra10E6/" "R-B.geo~" "../" "./")
 
  ("/home/yu/.emacs.d/" (22739 36416 505909 818000) "./" "auto-save-list/" "ido.last" "init.el" "snippets/" "company-statistics-cache.el" "elpa/" ".org-id-locations" "site-lisp/" "recentf" "pyim/" "history" "misc/" "../" ".session" "lisp/" ".git/" "LICENSE")
 
  ("/home/yu/.emacs.d/lisp/" (22739 36391 965744 305000) "init-windows.el" "init-chinese-pyim.el" "init-doxygen.el" "init-sessions.el" "init-hs-minor-mode.el" "init-python-mode.el" "init-javascript.el" "./" "init-workgroups2.el" "init-markdown.el" "init-artbollocks-mode.el" "init-httpd.el" "init-which-func.el" "init-misc-lazy.el" "init-elpa.el" "init-semantic.el" "init-cc-mode.el" "init-spelling.el" "init-emacs-w3m.el" "init-uniquify.el" "init-utils.el" "init-lua-mode.el" "init-ctags.el" "init-org.el" "init-css.el" "init-org-mime.el" "init-flymake.el" "init-exec-path.el" "init-erlang.el" "init-ido.el" "init-git.el" "init-fonts.el" "init-modeline.el" "init-sh.el" "init-gnus.el" "init-lisp.el" "init-clipboard.el" "init-emacspeak.el" "init-bbdb.el" "init-linum-mode.el" "init-cperl-mode.el" "init-web-mode.el" "init-textile.el" "init-keyfreq.el" "init-crontab.el" "init-xterm.el" "init-company.el" "init-ibuffer.el" "init-haskell.el" "../" "init-dired.el" "init-ivy.el" "init-hippie-expand.el" "init-smex.el" "init-ruby-mode.el" "init-writting.el" "init-compat.el" "init-zencoding-mode.el" "init-hydra.el" "#init-org.el#" "init-locales.el" "init-term-mode.el" "init-evil.el" "init-csv.el" "init-pomodoro.el" "init-yasnippet.el" "init-moz.el" "init-elisp.el" "init-site-lisp.el" "init-gui-frames.el" "init-color-theme.el" "init-gud.el" "init-gtags.el" "init-misc.el" "init-frame-hooks.el" "init-slime.el")
-
- ("/home/yu/" (22739 36364 537558 948000) "FlurryPP/" ".viminfo" ".aspell.en.prepl" ".lyx/" ".wine/" ".nvm/" ".emacs.d/" ".sogouinput/" "OpenFOAM-4.x/" "R-B.p3d" ".npm/" "Qt/" ".Xauthority" ".Mathematica/" ".xsession-errors" ".backups/" ".oracle_jre_usage/" ".launcher.16.1.0.ini" ".wiznote/" ".newsrc.eld" ".gmsh-errors" ".pip/" ".emacs_d_bak4/" ".allinea/" ".clion11/" ".profile" ".bookmarks" ".sangfor/" ".bash_logout" ".visit/" ".macromedia/" ".qt/" ".emacs.d_bak3/" ".emacs.d_bak/" ".gnuplot_history" "license.dat" ".texmf-var/" ".sudo_as_admin_successful" ".cache/" ".bash_history" ".gem/" ".config/" ".bashrc~" ".emacs.d_bak2/" ".codeblocks/" ".eclipse/" ".adobe/" ".gconf/" ".bashrc" ".python_history" ".matlab/" ".presage/" ".gnupg/" ".#date.org" ".yEd/" ".fonts/" ".aspell.en.pws" ".pki/" ".jupyter/" ".hplip/" ".subversion/" ".mplayer/" "org/" ".gnome2_private/" "HiFiLES-solver/" ".gnus" ".gnome/" "Documents/" ".gitconfig" ".intel/" ".ssh/" ".history" ".authinfo" ".notes" ".emacs.keyfreq" ".ICEauthority" ".pam_environment" ".thunderbird/" ".local/" "CFD/" ".dbus/" ".kde/" ".octave_hist" ".newsrc" ".gstreamer-0.10/" ".xinputrc" "rjsupplicant/" ".ansys/" "ThirdParty-4.x/" "Fluent/" ".fltk/" ".ddd/" ".swt/" ".xsel.log" ".gmshrc" "Trash/" "HiFiLES-solver-orgin/" "shared_files/" "Downloads/" "R-B.stl" "FlurryPP-master/" ".nutstore/" ".xsession-errors.old" ".nv/" ".gnome2/" ".java/" "test.msh" ".zotero/" ".kingsoft/" ".mozilla/" "working/" ".emacs.d_bak5/" ".flexlmrc" ".pdf" ".pencil/" ".smex-items" ".ipython/" ".designer/" "../" "./")
 
  ("/usr/local/" (22730 37121 667157 228000) "MATLAB/" "tecplot360ex/" "./" "java/" "Zotero/" "include/" "cuda-7.5/" "games/" "man/" "share/" "libexec/" "src/" "doc/" "firefox/" "etc/" "Wolfram/" "../" "sbin/" "var/" "lib/" "bin/" "ParaView-5.2.0/" "tecplot360_backup/" "texlive/" "cuda/")
 

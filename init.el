@@ -81,6 +81,7 @@
   (require 'init-cc-mode)
   (require 'init-gud)
   (require 'init-linum-mode)
+  (require 'init-ecd)
   ;; (require 'init-gist)
   (require 'init-moz)
   (require 'init-gtags)
@@ -125,7 +126,7 @@
                                init-csv
                                init-writting
                                init-doxygen
-                               init-pomodoro
+;;                               init-pomodoro
                                init-emacspeak
                                init-artbollocks-mode
                                init-semantic))
@@ -160,9 +161,11 @@
  '(custom-safe-themes
    (quote
     ("4cf3221feff536e2b3385209e9b9dc4c2e0818a69a1cdb4b522756bcdf4e00a4" "1b8d67b43ff1723960eb5e0cba512a2c7a2ad544ddb2533a90101fd1852b426e" "bb08c73af94ee74453c90422485b29e5643b73b05e8de029a6909af6a3fb3f58" default)))
+ '(ecb-options-version "2.40")
  '(fci-rule-color "#424242")
  '(git-gutter:handled-backends (quote (svn hg git)))
  '(org-agenda-files (quote ("~/org/gtd.org")))
+ '(org-archive-location "~/org/datetree.org::datetree/")
  '(safe-local-variable-values (quote ((lentic-init . lentic-orgel-org-init))))
  '(session-use-package t nil (session))
  '(vc-annotate-background nil)
@@ -202,6 +205,10 @@
 (setq make-backup-files nil)
 
 (setq gc-cons-threshold best-gc-cons-threshold)
+
+(setq default-frame-alist
+      '((height . 35)(width . 100)(menubar-lines . 20)(tool-bar-lines . 0)))
+
 
 ;;; Local Variables:
 ;;; no-byte-compile: t
