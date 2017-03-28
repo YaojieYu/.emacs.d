@@ -80,8 +80,13 @@
       org-edit-src-content-indentation 0
       org-edit-timestamp-down-means-later t
       org-agenda-start-on-weekday nil
-      org-agenda-span 14
-      org-agenda-include-diary t
+      org-agenda-sticky t
+
+      org-agenda-clockreport-mode t
+      org-agenda-log-mode t
+
+      org-agenda-span 1
+      org-agenda-include-diary nil
       org-agenda-window-setup 'current-window
       org-fast-tag-selection-single-key 'expert
       org-export-kill-product-buffer-when-displayed t

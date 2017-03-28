@@ -10,6 +10,9 @@
 (defvar best-gc-cons-threshold 4000000 "Best default gc threshold value. Should't be too big.")
 ;; don't GC during startup to save time
 (setq gc-cons-threshold most-positive-fixnum)
+;; set frame size
+(setq default-frame-alist
+      '((height . 100)(width . 100)(menubar-lines . 20)(tool-bar-lines . 0)))
 
 (setq emacs-load-start-time (current-time))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/lisp"))
@@ -81,7 +84,9 @@
   (require 'init-cc-mode)
   (require 'init-gud)
   (require 'init-linum-mode)
-  (require 'init-ecd)
+  (require 'init-ecb)
+  (require 'xcscope)
+  ;;(require 'init-xcscope)
   ;; (require 'init-gist)
   (require 'init-moz)
   (require 'init-gtags)
@@ -157,14 +162,15 @@
    [default bold shadow italic underline bold bold-italic bold])
  '(ansi-color-names-vector
    (vector "#eaeaea" "#d54e53" "#b9ca4a" "#e7c547" "#7aa6da" "#c397d8" "#70c0b1" "#424242"))
- '(custom-enabled-themes (quote (sanityinc-solarized-light)))
+ '(custom-enabled-themes (quote (sanityinc-tomorrow-blue)))
  '(custom-safe-themes
    (quote
-    ("4cf3221feff536e2b3385209e9b9dc4c2e0818a69a1cdb4b522756bcdf4e00a4" "1b8d67b43ff1723960eb5e0cba512a2c7a2ad544ddb2533a90101fd1852b426e" "bb08c73af94ee74453c90422485b29e5643b73b05e8de029a6909af6a3fb3f58" default)))
+    ("82d2cac368ccdec2fcc7573f24c3f79654b78bf133096f9b40c20d97ec1d8016" "628278136f88aa1a151bb2d6c8a86bf2b7631fbea5f0f76cba2a0079cd910f7d" "4cf3221feff536e2b3385209e9b9dc4c2e0818a69a1cdb4b522756bcdf4e00a4" "1b8d67b43ff1723960eb5e0cba512a2c7a2ad544ddb2533a90101fd1852b426e" "bb08c73af94ee74453c90422485b29e5643b73b05e8de029a6909af6a3fb3f58" default)))
  '(ecb-options-version "2.40")
+ '(ecb-source-path (quote (("/" "/"))))
  '(fci-rule-color "#424242")
  '(git-gutter:handled-backends (quote (svn hg git)))
- '(org-agenda-files (quote ("~/org/gtd.org")))
+ '(org-agenda-files (quote ("~/org/datetree.org" "~/org/gtd.org")))
  '(org-archive-location "~/org/datetree.org::datetree/")
  '(safe-local-variable-values (quote ((lentic-init . lentic-orgel-org-init))))
  '(session-use-package t nil (session))
@@ -198,17 +204,29 @@
  ;; If there is more than one, they won't work right.
  '(window-numbering-face ((t (:foreground "DeepPink" :underline "DeepPink" :weight bold))) t))
 
-(cua-mode 1)
-(global-undo-tree-mode)
 
 (put 'erase-buffer 'disabled nil)
-(setq make-backup-files nil)
-
 (setq gc-cons-threshold best-gc-cons-threshold)
 
-(setq default-frame-alist
-      '((height . 35)(width . 100)(menubar-lines . 20)(tool-bar-lines . 0)))
+;;关闭备份
 
+(setq make-backup-files nil)
+
+;;开启cua模式
+(cua-mode 1)
+
+;;开启undo-tree-mode
+(global-undo-tree-mode)
+
+;;最大化屏幕
+(global-set-key [f12] 'my-maximized)
+(defun my-maximized ()
+(interactive)
+(x-send-client-message nil 0 nil "_NET_WM_STATE" 32 '(2 "_NET_WM_STATE_MAXIMIZED_HORZ" 0)) (x-send-client-message nil 0 nil "_NET_WM_STATE" 32 '(2 "_NET_WM_STATE_MAXIMIZED_VERT" 0))
+ )
+
+;;关闭wich-key-mode提示
+(setq which-key-mode nil)
 
 ;;; Local Variables:
 ;;; no-byte-compile: t

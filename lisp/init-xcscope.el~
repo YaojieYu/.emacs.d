@@ -1,0 +1,12 @@
+;;加载xscope
+(add-to-list 'load-path' "~/.emacs.d/xcscope")
+
+(require 'xcscope)
+
+;;只在C/C++ mode下使用
+(add-hook 'c-mode-common-hook
+	  '(lambda ()
+	     (require 'xcscope)))
+
+
+(provide 'init-xcscope)
