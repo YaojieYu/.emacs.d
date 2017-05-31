@@ -2,6 +2,7 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/yu/org/knowledge/" . "writing/")
  ("/home/yu/FlurryPP/" . "src/")
  ("/home/yu/CFD/FlurryPP/" . "src/")
  ("/home/yu/CFD/Codes1.1/" . "CFD1D/")
@@ -22,6 +23,7 @@
 ;; ----- ido-work-directory-list -----
 (
  "/home/yu/org/"
+ "/home/yu/"
  "/home/yu/FR-LES/src/"
  "/home/yu/FR-LES/"
  "/home/yu/FlurryPP/src/"
@@ -31,28 +33,33 @@
 
 ;; ----- ido-work-file-list -----
 (
- "datetree.org"
  "gtd.org"
+ "datetree.org"
+ "test.tex"
+ "knowlege.org"
+ "test1.org"
  "frles.cpp"
  "README.org"
  "README.md"
  "ele.cpp"
  "boundFace.cpp"
- "flurry.cpp"
- "input"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/yu/org/" (22746 20454 658649 394000) "mobileorg.org" "./" "knowlege.org" "gtd.org" "datetree.org" "document/" "../" "gtd.org~" "knowledge/" "gtd.org_archive" "archive/" "notes.org" "ltxpng/" "diary")
+ ("/home/yu/org/" (22830 3972 479690 261000) "mobileorg.org" "./" ".gitignore" "knowlege.org" "gtd.org" "datetree.org" ".gitignore~" "document/" "../" "gtd.org~" "knowledge/" "notes.org" "ltxpng/" "diary" ".git/")
 
- ("/home/yu/" (22746 20544 75299 239000) "FlurryPP/" ".viminfo" ".aspell.en.prepl" ".lyx/" ".wine/" ".nvm/" ".emacs.d/" ".sogouinput/" "OpenFOAM-4.x/" ".npm/" "Qt/" ".Xauthority" ".Mathematica/" ".xsession-errors" ".backups/" ".ecb-tip-of-day.el" ".oracle_jre_usage/" ".launcher.16.1.0.ini" ".wiznote/" ".newsrc.eld" ".gmsh-errors" ".pip/" ".emacs_d_bak4/" ".allinea/" ".clion11/" ".profile" ".bookmarks" ".sangfor/" "installxSDK/" ".bash_logout" ".visit/" ".macromedia/" ".qt/" ".emacs.d_bak3/" ".emacs.d_bak/" ".gnuplot_history" ".texmf-var/" ".sudo_as_admin_successful" ".cache/" ".bash_history" ".gem/" ".config/" ".bashrc~" ".emacs.d_bak2/" ".codeblocks/" ".eclipse/" ".adobe/" ".gconf/" ".bashrc" ".python_history" ".matlab/" ".presage/" ".gnupg/" ".#date.org" ".yEd/" ".fonts/" ".aspell.en.pws" ".pki/" ".jupyter/" ".hplip/" ".subversion/" ".mplayer/" "org/" ".gnome2_private/" "HiFiLES-solver/" ".gnus" ".gnome/" "Documents/" ".gitconfig" ".intel/" ".ssh/" ".history" ".authinfo" ".notes" ".emacs.keyfreq" ".ICEauthority" ".pam_environment" ".thunderbird/" ".local/" "CFD/" ".dbus/" ".kde/" ".octave_hist" ".newsrc" ".gstreamer-0.10/" ".xinputrc" "rjsupplicant/" ".ansys/" "Fluent/" ".fltk/" ".ddd/" ".swt/" ".xsel.log" ".gmshrc" "Trash/" "HiFiLES-solver-orgin/" "Downloads/" "FlurryPP-master/" ".nutstore/" ".xsession-errors.old" ".nv/" ".gnome2/" ".java/" ".zotero/" ".kingsoft/" ".mozilla/" "working/" ".emacs.d_bak5/" ".flexlmrc" ".pdf" ".pencil/" ".smex-items" ".ipython/" "FR-LES/" ".designer/" "../" "./")
+ ("/home/yu/" (22830 3996 587943 222000) "FlurryPP/" ".viminfo" ".aspell.en.prepl" ".lyx/" ".wine/" ".nvm/" ".emacs.d/" ".sogouinput/" "OpenFOAM-4.x/" ".npm/" "Qt/" ".Xauthority" ".Mathematica/" ".xsession-errors" ".backups/" ".ecb-tip-of-day.el" ".oracle_jre_usage/" ".launcher.16.1.0.ini" ".wiznote/" ".newsrc.eld" ".gmsh-errors" ".pip/" ".emacs_d_bak4/" ".emacs_bak10/" ".allinea/" ".clion11/" "test.tex" ".profile" ".bookmarks" "RiemannPython-master/" ".sangfor/" ".bash_logout" ".visit/" ".macromedia/" ".qt/" ".emacs.d_bak/" ".gnuplot_history" ".texmf-var/" ".sudo_as_admin_successful" ".cache/" ".bash_history" ".gem/" ".xdvirc" ".config/" ".bashrc~" ".emacs.d_bak2/" ".codeblocks/" ".eclipse/" ".adobe/" ".gconf/" ".bashrc" ".python_history" ".matlab/" ".presage/" ".gnupg/" "test.log" ".#date.org" ".yEd/" "test.pdf" ".fonts/" ".aspell.en.pws" ".pki/" ".jupyter/" ".hplip/" ".subversion/" ".mplayer/" "org/" ".gnome2_private/" "HiFiLES-solver/" ".gnus" ".gnome/" "Documents/" ".gitconfig" ".intel/" ".ssh/" ".history" ".authinfo" "#test.org#~" ".notes" ".emacs.keyfreq" ".ICEauthority" ".pam_environment" ".thunderbird/" ".local/" "CFD/" ".dbus/" "test1.org~" ".kde/" ".octave_hist" ".newsrc" ".gstreamer-0.10/" ".xinputrc" "rjsupplicant/" ".ansys/" "ThirdParty-4.x/" ".fltk/" ".ddd/" ".swt/" ".xsel.log" ".gmshrc" "Trash/" "HiFiLES-solver-orgin/" "test.aux" "Downloads/" "FlurryPP-master/" ".nutstore/" ".xsession-errors.old" ".nv/" ".gnome2/" ".java/" ".zotero/" ".kingsoft/" ".mozilla/" "working/" ".emacs.d_bak5/" ".flexlmrc" ".pdf" ".pencil/" ".smex-items" ".ipython/" "FR-LES/" ".designer/" "../" "./")
 
- ("/home/yu/FlurryPP/src/" (22744 30397 41193 660000) "overFace.cpp" "input.cpp" "./" "ele.cpp" "geo_overset.cpp" "solver.cpp" "polynomials.cpp" "multigrid.cpp" "intFace.cpp" "geo.cpp" "boundFace.cpp" "global.cpp" "solver_overset.cpp" "mpiFace.cpp" "../" "output.cpp" "flux.cpp" "operators.cpp" "funcs.cpp" "face.cpp" "overComm.cpp" "superMesh.cpp" "matrix.cpp" "flurry.cpp" "mesh.cpp" "points.cpp")
+ ("/home/yu/FlurryPP/src/" (22826 12205 983927 243000) "overFace.cpp" "input.cpp" "./" "ele.cpp" "geo_overset.cpp" "solver.cpp" "polynomials.cpp" "multigrid.cpp" "intFace.cpp" "geo.cpp" "boundFace.cpp" "global.cpp" "solver_overset.cpp" "mpiFace.cpp" "../" "output.cpp" "flux.cpp" "operators.cpp" "funcs.cpp" "face.cpp" "overComm.cpp" "superMesh.cpp" "matrix.cpp" "flurry.cpp" "mesh.cpp" "points.cpp")
 
- ("/home/yu/FR-LES/" (22743 52239 55909 343000) "./" "include/" "makefile" "src/" "tests/" "../" "lib/" "bin/" "README.org" "configfiles/" ".git/" "obj/" "LICENSE")
+ ("/home/yu/FR-LES/" (22745 515 38715 620000) "./" ".gitignore" "include/" "makefile" "src/" "tests/" "../" "lib/" "bin/" "README.org" "configfiles/" ".git/" "obj/" "LICENSE")
 
- ("/home/yu/FR-LES/src/" (22744 34944 520097 437000) "overFace.cpp" "input.cpp" "./" "ele.cpp" "geo_overset.cpp" "solver.cpp" "polynomials.cpp" "multigrid.cpp" "intFace.cpp" "geo.cpp" "boundFace.cpp" "global.cpp" "solver_overset.cpp" "mpiFace.cpp" "../" "output.cpp" "flux.cpp" "operators.cpp" "funcs.cpp" "face.cpp" "frles.cpp" "overComm.cpp" "superMesh.cpp" "matrix.cpp" "mesh.cpp" "points.cpp")
+ ("/home/yu/FR-LES/src/" (22756 43175 779057 208000) "overFace.cpp" "input.cpp" "./" "ele.cpp" "geo_overset.cpp" "solver.cpp" "polynomials.cpp" "multigrid.cpp" "intFace.cpp" "geo.cpp" "boundFace.cpp" "global.cpp" "solver_overset.cpp" "mpiFace.cpp" "../" "output.cpp" "flux.cpp" "operators.cpp" "funcs.cpp" "face.cpp" "frles.cpp" "overComm.cpp" "superMesh.cpp" "matrix.cpp" "mesh.cpp" "points.cpp")
+
+ ("/home/yu/org/knowledge/writing/" (22639 17481 534337 477000) "./" "report2/" "report4/" "article1/" "research_plan/" "bib/" "report3/" "blog/" "report6/" "report/" "../" "kaiti/" "report9/" "report7/" "report8/" "report5/")
+
+ ("/home/yu/org/knowledge/" (22824 58890 227241 942000) "physics/" "writing/" "./" "math/" "English/" "Papers/" "Book/" "../" "CFD/" "High_Order_Method/" "CS/")
 
  ("/home/yu/working/Preconditioning/lid-driven/Flurry/Ma0.01/" (22699 45904 39960 615000) "48/" "128/" "16/" "64/" "32/" "../" "./")
 
