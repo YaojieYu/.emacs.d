@@ -56,7 +56,7 @@
   (require 'init-frame-hooks)
   ;; any file use flyspell should be initialized after init-spelling.el
   ;; actually, I don't know which major-mode use flyspell.
-  (require 'init-fonts)
+;;  (require 'init-fonts)
   (require 'init-spelling)
   (require 'init-xterm)
   (require 'init-gui-frames)
@@ -162,7 +162,7 @@
    [default bold shadow italic underline bold bold-italic bold])
  '(ansi-color-names-vector
    (vector "#eaeaea" "#d54e53" "#b9ca4a" "#e7c547" "#7aa6da" "#c397d8" "#70c0b1" "#424242"))
- '(custom-enabled-themes (quote (sanityinc-tomorrow-day)))
+ '(custom-enabled-themes (quote (sanityinc-tomorrow-blue)))
  '(custom-safe-themes
    (quote
     ("82d2cac368ccdec2fcc7573f24c3f79654b78bf133096f9b40c20d97ec1d8016" "628278136f88aa1a151bb2d6c8a86bf2b7631fbea5f0f76cba2a0079cd910f7d" "4cf3221feff536e2b3385209e9b9dc4c2e0818a69a1cdb4b522756bcdf4e00a4" "1b8d67b43ff1723960eb5e0cba512a2c7a2ad544ddb2533a90101fd1852b426e" "bb08c73af94ee74453c90422485b29e5643b73b05e8de029a6909af6a3fb3f58" default)))
@@ -170,7 +170,7 @@
  '(ecb-source-path (quote (("/" "/"))))
  '(fci-rule-color "#424242")
  '(git-gutter:handled-backends (quote (svn hg git)))
- '(org-agenda-files (quote ("~/org/gtd.org" "~/org/datetree.org")))
+ '(org-agenda-files (quote ("~/org/datetree.org" "~/org/gtd.org")))
  '(org-archive-location "~/org/datetree.org::datetree/")
  '(safe-local-variable-values (quote ((lentic-init . lentic-orgel-org-init))))
  '(session-use-package t nil (session))
@@ -224,6 +224,40 @@
 (interactive)
 (x-send-client-message nil 0 nil "_NET_WM_STATE" 32 '(2 "_NET_WM_STATE_MAXIMIZED_HORZ" 0)) (x-send-client-message nil 0 nil "_NET_WM_STATE" 32 '(2 "_NET_WM_STATE_MAXIMIZED_VERT" 0))
  )
+
+(require 'cl)
+ 
+(defun my-set-fontset (fontset alst)
+  "set fontset according to alst.
+ 
+The alst contains TARGET FONT-SPEC pairs. TARGET should be from
+most specific (latin) to most generic (nil). Otherwise, some
+lines will have no effect.
+ 
+see `set-fontset-font' for what could be used for TARGET and FONT-SPEC"
+  (loop for (target font-spec) in (reverse alst)
+    do (set-fontset-font fontset target font-spec)))
+ 
+(my-set-fontset
+ "fontset-startup"
+ '((latin "Bitstream Vera Sans Mono-12")  ;; 英文字体
+   (han "宋体-12")                         ;; 中文字体
+   (nil "文泉驿等宽正黑-12")))              ;; 其它所有字符默认字体
+ 
+;; set fontset-startup as current frame's font.
+(set-frame-font "fontset-startup" nil t)
+ 
+;; set fontset-startup as default frame font.
+(add-to-list 'default-frame-alist '(font . "fontset-startup"))
+
+;;;中文与英文字体设置
+;; Setting English Font；；(set-face-attribute
+ 'default nil :font "Monaco 10")
+;; Chinese Font
+;;(dolist (charset '(kana han symbol cjk-misc bopomofo))
+;;  (set-fontset-font (frame-parameter nil 'font)
+;;		    charset
+;;		    (font-spec :family "WenQuanYi Micro Hei" :size 12)))
 
 ;;关闭wich-key-mode提示
 (setq which-key-mode nil)
