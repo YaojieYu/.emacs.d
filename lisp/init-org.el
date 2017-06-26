@@ -36,23 +36,8 @@
     (setq ad-return-value run-spellcheck)))
 ;; }}
 
-;; Org v8 change log:
-;; @see http://orgmode.org/worg/org-8.0.html
 
-;; {{ export org-mode in Chinese into PDF
-;; @see http://freizl.github.io/posts/tech/2012-04-06-export-orgmode-file-in-Chinese.html
-;; and you need install texlive-xetex on different platforms
-;; To install texlive-xetex:
-;;    `sudo USE="cjk" emerge texlive-xetex` on Gentoo Linux
-(setq org-latex-to-pdf-process ;; org v7
-      '("xelatex -interaction nonstopmode -output-directory %o %f"
-        "xelatex -interaction nonstopmode -output-directory %o %f"
-        "xelatex -interaction nonstopmode -output-directory %o %f"))
-(setq org-latex-pdf-process org-latex-to-pdf-process) ;; org v8
-;; }}
-;; 中文换行问题  
-(add-hook 'org-mode-hook   
-      (lambda () (setq truncate-lines nil))) 
+
 (defun my-setup-odt-org-convert-process ()
   (interactive)
   (let ((cmd "/Applications/LibreOffice.app/Contents/MacOS/soffice"))
@@ -66,13 +51,13 @@
 (my-setup-odt-org-convert-process)
 
 ;; @see https://gist.github.com/mwfogleman/95cc60c87a9323876c6c
-(defun narrow-or-widen-dwim ()
-  "If the buffer is narrowed, it widens. Otherwise, it narrows to region, or Org subtree."
-  (interactive)
-  (cond ((buffer-narrowed-p) (widen))
-        ((region-active-p) (narrow-to-region (region-beginning) (region-end)))
-        ((equal major-mode 'org-mode) (org-narrow-to-subtree))
-        (t (error "Please select a region to narrow to"))))
+;;(defun narrow-or-widen-dwim ()
+;;  "If the buffer is narrowed, it widens. Otherwise, it narrows to region, or Org subtree."
+;;  (interactive)
+;;  (cond ((buffer-narrowed-p) (widen))
+;;        ((region-active-p) (narrow-to-region (region-beginning) (region-end)))
+;;        ((equal major-mode 'org-mode) (org-narrow-to-subtree))
+;;        (t (error "Please select a region to narrow to"))))
 
 ;; Various preferences
 (setq org-log-done t
@@ -166,7 +151,7 @@
 
   ;; display wrapped lines instead of truncated lines
   (setq truncate-lines nil)
-  (setq word-wrap t))
+  (setq word-wrap nil))
 (add-hook 'org-mode-hook 'org-mode-hook-setup)
 
 (defadvice org-open-at-point (around org-open-at-point-choose-browser activate)
@@ -187,12 +172,6 @@
     ad-do-it
 	(setq load-user-customized-major-mode-hook old)))
 
-
-;; 中文换行问题  
-(add-hook 'org-mode-hook   
-      (lambda () (setq truncate-lines nil))) 
-
-
 ;; active Babel languages
 (org-babel-do-load-languages
  'org-babel-load-languages
@@ -211,6 +190,61 @@
 ;; Agenda views
 (setq-default org-agenda-clockreport-parameter-plist '(:link t :maxlevel 3))
 (global-set-key (kbd "C-c a") 'org-agenda)
+
+;; 中文换行问题  
+;;(add-hook 'org-mode-hook   
+;;	  (lambda () (setq truncate-lines nil))) 
+
+;; Org v8 change log:
+;; @see http://orgmode.org/worg/org-8.0.html
+
+;; {{ export org-mode in Chinese into PDF
+;; @see http://freizl.github.io/posts/tech/2012-04-06-export-orgmode-file-in-Chinese.html
+;; and you need install texlive-xetex on different platforms
+;; To install texlive-xetex:
+;;    `sudo USE="cjk" emerge texlive-xetex` on Gentoo Linux
+(setq org-latex-to-pdf-process ;; org v7
+      '("xelatex -interaction nonstopmode -output-directory %o %f"
+        "xelatex -interaction nonstopmode -output-directory %o %f"
+        "xelatex -interaction nonstopmode -output-directory %o %f"))
+(setq org-latex-pdf-process org-latex-to-pdf-process) ;; org v8
+;; }}
+
+(require 'ox-latex)
+(unless (boundp 'org-latex-classes)
+  (setq org-latex-classes nil))
+(add-to-list 'org-latex-classes
+             '("cn-article"
+               "\\documentclass[10pt,a4paper]{article}
+                \\usepackage{graphicx}
+                \\usepackage{xcolor}
+                \\usepackage{xeCJK}
+                \\usepackage{lmodern}
+                \\usepackage{verbatim}
+                \\usepackage{fixltx2e}
+                \\usepackage{longtable}
+                \\usepackage{float}
+                \\usepackage{tikz}
+                \\usepackage{wrapfig}
+                \\usepackage{textcomp}
+                \\usepackage{listings}
+                \\usepackage{geometry}
+                \\usepackage{marvosym}
+                \\usepackage{wasysym}
+                \\usepackage{latexsym}
+                \\usepackage{fancyhdr}
+                \\usepackage[xetex,colorlinks=true,CJKbookmarks=true,linkcolor=black,urlcolor=black, menucolor=black]{hyperref}
+                \\fancyfoot[C]{\\bfseries\\thepage}
+                \\chead{\\MakeUppercase\\sectionmark}
+                \\pagestyle{fancy}
+                \\tolerance=1000
+                [NO-DEFAULT-PACKAGES]
+                [NO-PACKAGES]"
+	       ("\\section{%s}" . "\\section*{%s}")
+	       ("\\subsection{%s}" . "\\subsection*{%s}")
+	       ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+	       ("\\paragraph{%s}" . "\\paragraph*{%s}")
+	       ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
 
 (provide 'init-org)
 
