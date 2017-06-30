@@ -2,6 +2,8 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/yu/org/knowledge/writing/report11/" . "figure/")
+ ("/home/yu/FR-LES/" . "src/")
  ("/home/yu/org/knowledge/" . "writing/")
  ("/home/yu/FlurryPP/" . "src/")
  ("/home/yu/CFD/FlurryPP/" . "src/")
@@ -23,6 +25,7 @@
 ;; ----- ido-work-directory-list -----
 (
  "/home/yu/org/"
+ "/home/yu/org/knowledge/writing/report11/"
  "/home/yu/"
  "/home/yu/FR-LES/src/"
  "/home/yu/FR-LES/"
@@ -33,31 +36,41 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "knowlege.org"
  "gtd.org"
+ "report11.org"
+ "report.org"
+ "test.org"
+ ".Xauthority"
  "datetree.org"
  "test.tex"
- "knowlege.org"
  "test1.org"
  "frles.cpp"
- "README.org"
- "README.md"
- "ele.cpp"
- "boundFace.cpp"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/yu/org/" (22836 52100 6819 190000) "mobileorg.org" "./" ".gitignore" "knowlege.org" "gtd.org" "datetree.org" ".gitignore~" "document/" "../" "gtd.org~" "knowledge/" "notes.org" "ltxpng/" "diary" ".git/")
+ ("/home/yu/org/knowledge/writing/report11/" (22870 17501 84336 804000) "rb.bib" "./" "report11.tex" ".#report11.org" "report11.org" "report11.bbl" "../" "report11.blg" "ltxpng/" "report11.pdf" "figure/")
 
- ("/home/yu/" (22836 52116 514574 683000) "FlurryPP/" ".viminfo" ".aspell.en.prepl" ".lyx/" ".wine/" ".nvm/" ".emacs.d/" ".sogouinput/" "OpenFOAM-4.x/" ".npm/" "Qt/" ".Xauthority" ".Mathematica/" ".xsession-errors" ".backups/" ".ecb-tip-of-day.el" ".oracle_jre_usage/" ".launcher.16.1.0.ini" ".wiznote/" ".newsrc.eld" ".gmsh-errors" ".pip/" ".emacs_d_bak4/" ".emacs_bak10/" ".allinea/" ".clion11/" ".profile" ".bookmarks" "RiemannPython-master/" ".sangfor/" ".bash_logout" ".visit/" ".macromedia/" ".qt/" ".emacs.d_bak/" ".gnuplot_history" ".texmf-var/" ".sudo_as_admin_successful" ".cache/" ".bash_history" ".gem/" ".xdvirc" ".config/" ".bashrc~" ".emacs.d_bak2/" ".codeblocks/" ".eclipse/" ".adobe/" ".gconf/" ".bashrc" ".python_history" ".matlab/" ".presage/" ".gnupg/" ".#date.org" ".yEd/" ".fonts/" ".aspell.en.pws" ".pki/" ".jupyter/" ".hplip/" "back.org~" ".subversion/" ".mplayer/" "org/" ".gnome2_private/" "HiFiLES-solver/" ".gnus" ".gnome/" "Documents/" ".gitconfig" ".intel/" ".ssh/" ".history" ".authinfo" "#test.org#~" ".notes" ".emacs.keyfreq" ".ICEauthority" ".pam_environment" ".thunderbird/" ".local/" "CFD/" ".dbus/" "test1.org~" ".kde/" ".octave_hist" ".newsrc" ".gstreamer-0.10/" ".xinputrc" "rjsupplicant/" ".ansys/" "ThirdParty-4.x/" ".fltk/" ".ddd/" ".swt/" ".xsel.log" ".gmshrc" "Trash/" "HiFiLES-solver-orgin/" "Downloads/" "FlurryPP-master/" ".nutstore/" ".xsession-errors.old" ".nv/" ".gnome2/" ".java/" ".zotero/" ".kingsoft/" ".mozilla/" "working/" ".emacs.d_bak5/" "back.org" ".flexlmrc" "未命名文件夹/" ".pdf" ".pencil/" ".smex-items" ".ipython/" "FR-LES/" ".designer/" "../" "./")
+ ("/home/yu/org/knowledge/writing/report11/figure/" (22870 17226 861249 539000) "./" "grid2.png" "RB.png" "../" "grid1.png" "grid.png")
 
- ("/home/yu/FlurryPP/src/" (22826 12205 983927 243000) "overFace.cpp" "input.cpp" "./" "ele.cpp" "geo_overset.cpp" "solver.cpp" "polynomials.cpp" "multigrid.cpp" "intFace.cpp" "geo.cpp" "boundFace.cpp" "global.cpp" "solver_overset.cpp" "mpiFace.cpp" "../" "output.cpp" "flux.cpp" "operators.cpp" "funcs.cpp" "face.cpp" "overComm.cpp" "superMesh.cpp" "matrix.cpp" "flurry.cpp" "mesh.cpp" "points.cpp")
+ ("/home/yu/org/" (22868 17493 389288 33000) "mobileorg.org" "test.tex~" "./" ".gitignore" "knowlege.org" "gtd.org" "datetree.org" ".gitignore~" "document/" "../" "knowledge/" "notes.org" "ltxpng/" "diary" ".git/")
 
- ("/home/yu/FR-LES/" (22745 515 38715 620000) "./" ".gitignore" "include/" "makefile" "src/" "tests/" "../" "lib/" "bin/" "README.org" "configfiles/" ".git/" "obj/" "LICENSE")
+ ("/home/yu/" (22867 44753 132609 236000) "FlurryPP/" ".viminfo" ".aspell.en.prepl" ".lyx/" ".wine/" ".nvm/" ".emacs.d/" ".sogouinput/" "OpenFOAM-4.x/" ".npm/" "Qt/" ".Xauthority" ".Mathematica/" ".xsession-errors" ".backups/" ".ecb-tip-of-day.el" ".oracle_jre_usage/" ".launcher.16.1.0.ini" ".wiznote/" ".newsrc.eld" ".gmsh-errors" ".pip/" ".allinea/" ".clion11/" ".profile" ".bookmarks" ".sangfor/" ".bash_logout" ".visit/" ".macromedia/" ".qt/" ".gnuplot_history" ".texmf-var/" ".sudo_as_admin_successful" ".cache/" ".bash_history" ".gem/" ".xdvirc" ".config/" ".bashrc~" ".codeblocks/" ".eclipse/" ".adobe/" ".gconf/" ".bashrc" ".python_history" ".matlab/" ".presage/" ".gnupg/" ".#date.org" ".yEd/" ".fonts/" ".aspell.en.pws" ".pki/" ".jupyter/" ".hplip/" ".subversion/" ".mplayer/" "org/" ".gnome2_private/" "HiFiLES-solver/" ".gnus" ".gnome/" "Documents/" ".gitconfig" ".intel/" ".ssh/" ".history" ".authinfo" ".notes" ".emacs.keyfreq" ".ICEauthority" ".pam_environment" ".thunderbird/" ".local/" "CFD/" ".dbus/" ".kde/" ".octave_hist" ".newsrc" ".gstreamer-0.10/" ".xinputrc" "rjsupplicant/" ".ansys/" "ThirdParty-4.x/" ".fltk/" ".ddd/" ".swt/" ".xsel.log" ".gmshrc" "Trash/" "HiFiLES-solver-orgin/" "Downloads/" "FlurryPP-master/" ".nutstore/" ".xsession-errors.old" ".nv/" ".lantern/" ".gnome2/" ".java/" ".zotero/" ".kingsoft/" ".byteexec/" ".mozilla/" "working/" ".flexlmrc" ".pdf" ".pencil/" ".smex-items" ".ipython/" "FR-LES/" ".designer/" "../" "./")
 
- ("/home/yu/FR-LES/src/" (22756 43175 779057 208000) "overFace.cpp" "input.cpp" "./" "ele.cpp" "geo_overset.cpp" "solver.cpp" "polynomials.cpp" "multigrid.cpp" "intFace.cpp" "geo.cpp" "boundFace.cpp" "global.cpp" "solver_overset.cpp" "mpiFace.cpp" "../" "output.cpp" "flux.cpp" "operators.cpp" "funcs.cpp" "face.cpp" "frles.cpp" "overComm.cpp" "superMesh.cpp" "matrix.cpp" "mesh.cpp" "points.cpp")
+ ("/home/yu/org/knowledge/writing/" (22864 27412 246529 278000) "./" "Latex template/" "report2/" "report10/" "report4/" "research_plan/" "bib/" "report3/" "blog/" "report6/" "report/" "../" "kaiti/" "report9/" "report7/" "report8/" "report5/")
 
- ("/home/yu/org/knowledge/writing/" (22639 17481 534337 477000) "./" "report2/" "report4/" "article1/" "research_plan/" "bib/" "report3/" "blog/" "report6/" "report/" "../" "kaiti/" "report9/" "report7/" "report8/" "report5/")
+ ("/home/yu/FR-LES/" (22864 20008 686975 696000) "./" ".gitignore" "include/" "Makefile" "FR-LES.pro.user.3.2-pre1" "FR-LES.pro.user" "src/" "tests/" ".gitignore~" "../" "lib/" "FR-LES.pro~" "bin/" "FR-LES.pro" "README.org" "configfiles/" "FR-LES.pro.user.18" ".git/" "obj/" "LICENSE")
+
+ ("/home/yu/FlurryPP/src/" (22859 51550 355768 981000) "overFace.cpp" "input.cpp" "./" "ele.cpp" "geo_overset.cpp" "solver.cpp" "polynomials.cpp" "multigrid.cpp" "intFace.cpp" "geo.cpp" "boundFace.cpp" "global.cpp" "solver_overset.cpp" "mpiFace.cpp" "../" "output.cpp" "flux.cpp" "operators.cpp" "funcs.cpp" "face.cpp" "overComm.cpp" "superMesh.cpp" "matrix.cpp" "flurry.cpp" "mesh.cpp" "points.cpp")
+
+ ("/home/yu/FR-LES/src/" (22860 64900 649744 848000) "overFace.cpp" "input.cpp" "./" "ele.cpp" "geo_overset.cpp" "solver.cpp" "polynomials.cpp" "multigrid.cpp" "intFace.cpp" "geo.cpp" "boundFace.cpp" "global.cpp" "solver_overset.cpp" "mpiFace.cpp" "../" "output.cpp" "flux.cpp" "operators.cpp" "funcs.cpp" "face.cpp" "frles.cpp" "overComm.cpp" "superMesh.cpp" "matrix.cpp" "mesh.cpp" "points.cpp")
+
+ ("/home/yu/FlurryPP/include/" (22846 1874 230112 40000) "mesh.hpp" "ele.hpp" "flurry.hpp" "matrix.hpp" "output.hpp" "face.hpp" "./" "mpiFace.hpp" "superMesh.hpp" "solver.hpp" "geo.hpp" "boundFace.hpp" "flux.hpp" "multigrid.hpp" "points.hpp" "overFace.hpp" "global.hpp" "funcs.hpp" "polynomials.hpp" "input.hpp" "../" "overComm.hpp" "operators.hpp" "error.hpp" "intFace.hpp")
+
+ ("/home/yu/FlurryPP/" (22849 13631 890437 916000) "Flurry.pro" "planning" "./" ".gitignore" "include/" "README.md" "Flurry.pro.user.18" "Makefile" "dataPlotter.m" "Flurry.pro.user.3.2-pre1" "Flurry.cbp" "src/" "tests/" "../" "Flurry.pro.user" "lib/" "bin/" "configfiles/" ".git/" "obj/" "LICENSE")
+
+ ("/home/yu/FR-LES/include/" (22849 13806 461223 327000) "mesh.hpp" "ele.hpp" "matrix.hpp" "output.hpp" "face.hpp" "./" "mpiFace.hpp" "superMesh.hpp" "solver.hpp" "geo.hpp" "boundFace.hpp" "flux.hpp" "multigrid.hpp" "points.hpp" "overFace.hpp" "global.hpp" "funcs.hpp" "polynomials.hpp" "frles.hpp" "solver.hpp~" "input.hpp" "../" "overComm.hpp" "operators.hpp" "error.hpp" "intFace.hpp" "flux.hpp~")
 
  ("/home/yu/org/knowledge/" (22824 58890 227241 942000) "physics/" "writing/" "./" "math/" "English/" "Papers/" "Book/" "../" "CFD/" "High_Order_Method/" "CS/")
 
@@ -68,8 +81,6 @@
  ("/home/yu/working/Preconditioning/lid-driven/Flurry/Ma0.01/32/p2/" (22743 26946 702688 659000) "./" "non_uniform1/" "Re400/" "origin/" "pre/" "Non_uniform_Re400/" "../" "Ma0.05/")
 
  ("/home/yu/working/Preconditioning/lid-driven/Flurry/Ma0.01/32/p2/pre/" (22743 31900 212936 748000) "lid-driven_000110000/" "lid-driven_000040000/" "lid-driven_000065000.pvtu" "lid-driven_000070000/" "cavity.geo" "./" "lid-driven_000005000/" "lid-driven_000020000/" "lid-driven_000140000/" "lid-driven_000005000.pvtu" "lid-driven_000100000.pvtu" "lid-driven_000195000.pvtu" "lid-driven_000120000.pvtu" "lid-driven_000120000/" "Re5000/" "lid-driven_000130000.pvtu" "lid-driven.hist" "lid-driven_000080000/" "lid-driven_000175000.pvtu" "input" "lid-driven_000030000/" "lid-driven_000040000.pvtu" "lid-driven_000155000/" "lid-driven_000045000/" "lid-driven_000160000.pvtu" "lid-driven_000045000.pvtu" "lid-driven_000090000/" "lid-driven_000025000/" "lid-driven_000160000/" "lid-driven_000035000/" "lid-driven_000175000/" "lid-driven_000055000.pvtu" "lid-driven_000035000.pvtu" "lid-driven_000100000/" "lid-driven_000125000/" "lid-driven_000060000/" "lid-driven_000135000/" "lid-driven_000180000/" "lid-driven_000155000.pvtu" "lid-driven_000150000.pvtu" "lid-driven_000075000/" "lid-driven_000190000/" "input~" "lid-driven_000095000.pvtu" "lid-driven_000145000/" "lid-driven_000165000/" "lid-driven_000185000.pvtu" "lid-driven_000115000.pvtu" "lid-driven_000065000/" "Flurry" "lid-driven_000140000.pvtu" "lid-driven_000130000/" "lid-driven_000125000.pvtu" "lid-driven_000115000/" "lid-driven_000145000.pvtu" "lid-driven_000015000/" "lid-driven_000015000.pvtu" "lid-driven_000000000.pvtu" "lid-driven_000165000.pvtu" "../" "lid-driven_000135000.pvtu" "lid-driven_000085000.pvtu" "lid-driven_000095000/" "lid-driven_000105000/" "lid-driven_000025000.pvtu" "lid-driven_000170000.pvtu" "lid-driven_000000000/" "lid-driven_000090000.pvtu" "lid-driven_000185000/" "lid-driven_000060000.pvtu" "lid-driven_000200000/" "lid-driven_000030000.pvtu" "lid-driven_000110000.pvtu" "lid-driven_000150000/" "lid-driven_000070000.pvtu" "lid-driven_000085000/" "lid-driven_000010000.pvtu" "lid-driven_000200000.pvtu" "cavity.msh" "lid-driven_000170000/" "lid-driven_000190000.pvtu" "lid-driven_000080000.pvtu" "lid-driven_000195000/" "lid-driven_000050000/" "lid-driven_000050000.pvtu" "lid-driven_000105000.pvtu" "lid-driven_000055000/" "lid-driven_000180000.pvtu" "lid-driven_000075000.pvtu" "lid-driven_000010000/" "lid-driven_000020000.pvtu")
-
- ("/home/yu/FlurryPP/" (22728 38163 559640 447000) "Flurry.pro" "planning" "./" ".gitignore" "include/" "README.md" "dataPlotter.m" "makefile" "Flurry.cbp" "src/" "tests/" "../" "lib/" "bin/" "configfiles/" ".git/" "obj/" "LICENSE")
 
  ("/home/yu/CFD/FlurryPP/src/" (22741 54529 757664 177000) "overFace.cpp" "input.cpp" "./" "ele.cpp" "geo_overset.cpp" "solver.cpp" "polynomials.cpp" "multigrid.cpp" "intFace.cpp" "geo.cpp" "boundFace.cpp" "global.cpp" "solver_overset.cpp" "mpiFace.cpp" "../" "output.cpp" "flux.cpp" "operators.cpp" "funcs.cpp" "face.cpp" "overComm.cpp" "superMesh.cpp" "matrix.cpp" "flurry.cpp" "mesh.cpp" "points.cpp")
 

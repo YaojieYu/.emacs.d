@@ -86,6 +86,7 @@
   (require 'init-linum-mode)
   (require 'init-ecb)
   (require 'xcscope)
+  (require 'cdlatex)
   ;;(require 'init-xcscope)
   ;; (require 'init-gist)
   (require 'init-moz)
