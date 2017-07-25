@@ -203,6 +203,7 @@
 ;; and you need install texlive-xetex on different platforms
 ;; To install texlive-xetex:
 ;;    `sudo USE="cjk" emerge texlive-xetex` on Gentoo Linux
+
 (setq org-latex-to-pdf-process ;; org v7
       '("xelatex -interaction nonstopmode -output-directory %o %f"
         "xelatex -interaction nonstopmode -output-directory %o %f"
@@ -215,7 +216,7 @@
   (setq org-latex-classes nil))
 (add-to-list 'org-latex-classes
              '("cn-article"
-               "\\documentclass[10pt,a4paper]{article}
+               "\\documentclass[a4paper]{ctexart}
                 \\usepackage{graphicx}
                 \\usepackage{xcolor}
                 \\usepackage{xeCJK}
@@ -246,5 +247,31 @@
 	       ("\\paragraph{%s}" . "\\paragraph*{%s}")
 	       ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
 
+(add-to-list 'org-latex-classes
+             ;; beamer class, for presentations
+             '("beamer"
+               "\\documentclass[11pt,professionalfonts]{beamer}
+
+                 \\beamertemplateballitem
+                 \\setbeameroption{show notes}
+                 \\usepackage{graphicx}
+                 \\usepackage{tikz}
+                 \\usepackage{xcolor}
+                 \\usepackage{xeCJK}
+                 \\usepackage{amsmath}
+                 \\usepackage{lmodern}
+                 \\usepackage{fontspec,xunicode,xltxtra}
+                 \\usepackage{polyglossia}
+                 \\setmainfont{Times New Roman}
+ 
+                 \\usepackage{verbatim}
+                 \\usepackage{listings}
+                 \\institute{{{{beamerinstitute}}}}
+                 \\subject{{{{beamersubject}}}}"
+               ("\\section{%s}" . "\\section*{%s}")
+               ("\\begin{frame}[fragile]\\frametitle{%s}"
+                "\\end{frame}"
+                "\\begin{frame}[fragile]\\frametitle{%s}"
+                "\\end{frame}")))
 (provide 'init-org)
 

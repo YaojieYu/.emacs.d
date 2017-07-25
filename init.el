@@ -52,7 +52,7 @@
   (require 'init-site-lisp) ;; Must come before elpa, as it may provide package.el
   (require 'idle-require)
   (require 'init-elpa)
-  (require 'init-exec-path) ;; Set up $PATH
+;;  (require 'init-exec-path) ;; Set up $PATH
   (require 'init-frame-hooks)
   ;; any file use flyspell should be initialized after init-spelling.el
   ;; actually, I don't know which major-mode use flyspell.
@@ -171,7 +171,9 @@
  '(ecb-source-path (quote (("/" "/"))))
  '(fci-rule-color "#424242")
  '(git-gutter:handled-backends (quote (svn hg git)))
- '(org-agenda-files (quote ("~/org/gtd.org" "~/org/datetree.org")))
+ '(org-agenda-files
+   (quote
+    ("~/org/knowledge/writing/report11/report11.org" "~/org/gtd.org" "~/org/datetree.org")))
  '(org-archive-location "~/org/datetree.org::datetree/")
  '(safe-local-variable-values (quote ((lentic-init . lentic-orgel-org-init))))
  '(session-use-package t nil (session))
@@ -228,6 +230,55 @@
 
 ;;关闭wich-key-mode提示
 (setq which-key-mode nil)
+
+;;;;;;;;;;;;;;;;;
+;auctex
+;;;;;;;;;;;;;;;;;
+
+
+(setq TeX-auto-save t)
+(setq TeX-parse-self t)
+(setq-default TeX-master nil)
+(mapc (lambda (mode)
+(add-hook 'LaTeX-mode-hook mode))
+      (list 'auto-complete-mode
+   'auto-fill-mode
+   'LaTeX-math-mode
+   'turn-on-reftex
+   'linum-mode))
+(add-hook 'LaTeX-mode-hook
+          (lambda ()
+            (setq TeX-auto-untabify t     ; remove all tabs before saving
+                  TeX-engine 'xetex       ; use xelatex default
+                  TeX-show-compilation t) ; display compilation windows
+            (TeX-global-PDF-mode t)       ; PDF mode enable, not plain
+            (setq TeX-save-query nil)
+            (imenu-add-menubar-index)
+            (define-key LaTeX-mode-map (kbd "TAB") 'TeX-complete-symbol)))
+; set pdf view tool
+(setq TeX-view-program-list '(("Evince" "evince %o")))
+(cond
+ ((eq system-type 'windows-nt)
+  (add-hook 'LaTeX-mode-hook
+            (lambda ()
+              (setq TeX-view-program-selection '((output-pdf "SumatraPDF")
+                                                 (output-dvi "Yap"))))))
+
+ ((eq system-type 'gnu/linux)
+  (add-hook 'LaTeX-mode-hook
+            (lambda ()
+              (setq TeX-view-program-selection '((output-pdf "Evince")
+                                                 (output-dvi "Evince")))))))
+; XeLaTeX
+(add-hook 'LaTeX-mode-hook (lambda()
+    (add-to-list 'TeX-command-list '("XeLaTeX" "%`xelatex%(mode)%' %t" TeX-run-TeX nil t))
+    (setq TeX-command-default "XeLaTeX")
+    (setq TeX-save-query  nil )
+    (setq TeX-show-compilation t)
+    ))
+
+(setenv "PATH" (concat (getenv "PATH") ":/usr/local/texlive/2015/bin/x86_64-linux"))  
+(setq exec-path (append exec-path '("/usr/local/texlive/2015/bin/x86_64-linux"))) 
 
 ;;; Local Variables:
 ;;; no-byte-compile: t
