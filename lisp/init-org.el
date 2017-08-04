@@ -173,20 +173,20 @@
 	(setq load-user-customized-major-mode-hook old)))
 
 ;; active Babel languages
-(org-babel-do-load-languages
- 'org-babel-load-languages
- '((R . t)
-   (emacs-lisp . t)
-   (python . t)
-   (maxima . t)
-   (ditaa . t)
-   (python . t)
-   (sh . t)
-   (latex . t)
-   (plantuml . t)
-   (gnuplot . t)
-   (C . t)
-  ))
+;;(org-babel-do-load-languages
+;; 'org-babel-load-languages
+;; '((R . t)
+;;   (emacs-lisp . t)
+;;   (python . t)
+;;   (maxima . t)
+;;   (ditaa . t)
+;;   (python . t)
+;;   (sh . t)
+;;   (latex . t)
+;;   (plantuml . t)
+;;   (gnuplot . t)
+;;   (C . t)
+;;  ))
 ;; Agenda views
 (setq-default org-agenda-clockreport-parameter-plist '(:link t :maxlevel 3))
 (global-set-key (kbd "C-c a") 'org-agenda)
@@ -226,7 +226,6 @@
                 \\usepackage{longtable}
                 \\usepackage{float}
                 \\usepackage{tikz}
-                \\usepackage{wrapfig}
                 \\usepackage{textcomp}
                 \\usepackage{listings}
                 \\usepackage{geometry}

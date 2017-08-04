@@ -1,6 +1,4 @@
 ;; -*- coding: utf-8 -*-
-;(defvar best-gc-cons-threshold gc-cons-threshold "Best default gc threshold value. Should't be too big.")
-
 ;; Added by Package.el.  This must come before configurations of
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
@@ -52,16 +50,12 @@
   (require 'init-site-lisp) ;; Must come before elpa, as it may provide package.el
   (require 'idle-require)
   (require 'init-elpa)
-;;  (require 'init-exec-path) ;; Set up $PATH
   (require 'init-frame-hooks)
-  ;; any file use flyspell should be initialized after init-spelling.el
-  ;; actually, I don't know which major-mode use flyspell.
   (require 'init-fonts)
   (require 'init-spelling)
   (require 'init-xterm)
   (require 'init-gui-frames)
   (require 'init-ido)
-  (require 'init-dired)
   (require 'init-uniquify)
   (require 'init-ibuffer)
   (require 'init-flymake)
@@ -74,25 +68,15 @@
   (require 'init-crontab)
   (require 'init-markdown)
   (require 'init-org)
-  (require 'init-org-mime)
   (require 'init-python-mode)
   (require 'init-lisp)
   (require 'init-elisp)
   (require 'init-yasnippet)
-  ;; Use bookmark instead
   (require 'init-zencoding-mode)
   (require 'init-cc-mode)
   (require 'init-gud)
   (require 'init-linum-mode)
-  (require 'init-ecb)
-  (require 'xcscope)
-  (require 'cdlatex)
-  ;;(require 'init-xcscope)
-  ;; (require 'init-gist)
-  (require 'init-moz)
   (require 'init-gtags)
-  ;; use evil mode (vi key binding)
-  ;; (require 'init-evil)
   (require 'init-sh)
   (require 'init-ctags)
   (require 'init-bbdb)
@@ -102,43 +86,21 @@
   (require 'init-slime)
   (require 'init-clipboard)
   (require 'init-company)
-;;  (require 'init-chinese-pyim) ;; cannot be idle-required
-  ;; need statistics of keyfreq asap
-  (require 'init-keyfreq)
   (require 'init-httpd)
-
-  ;; projectile costs 7% startup time
-
-  ;; misc has some crucial tools I need immediately
+  (require 'init-org-ref)
+  (require 'init-auctex)
   (require 'init-misc)
-
-  ;; comment below line if you want to setup color theme in your own way
-  (if (or (display-graphic-p) (string-match-p "256color"(getenv "TERM"))) (require 'init-color-theme))
-
   (require 'init-emacs-w3m)
   (require 'init-hydra)
-
-  ;; {{ idle require other stuff
-  (setq idle-require-idle-delay 3)
-  (setq idle-require-symbols '(init-misc-lazy
-;;			       init-erlang
-;;			       init-javascript
-;;			       init-gnus
-;;			       lua-mode
-;;			       init-css
-                               init-which-func
-                               init-hs-minor-mode
-                               init-textile
-                               init-csv
-                               init-writting
-                               init-doxygen
-;;                               init-pomodoro
-                               init-emacspeak
-                               init-artbollocks-mode
-                               init-semantic))
-
-  (idle-require-mode 1) ;; starts loading
-  ;; }}
+  (require 'init-which-func)
+  (require 'init-csv)
+  (require 'init-writting)
+  (require 'init-doxygen)
+  (require 'init-emacspeak)
+  (require 'init-artbollocks-mode)
+  (require 'init-semantic)
+  (require 'xcscope)
+  (require 'cdlatex)
 
   (when (require 'time-date nil t)
     (message "Emacs startup time: %d seconds."
@@ -151,136 +113,13 @@
 
   ;; my personal setup, other major-mode specific setup need it.
   ;; It's dependent on init-site-lisp.el
-  (if (file-exists-p "~/.custom.el") (load-file "~/.custom.el"))
+  (if (file-exists-p "~/.emacs.d/customize.el") (load-file "~/.emacs.d/customize.el"))
   )
-
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(ansi-color-faces-vector
-   [default bold shadow italic underline bold bold-italic bold])
- '(ansi-color-names-vector
-   (vector "#eaeaea" "#d54e53" "#b9ca4a" "#e7c547" "#7aa6da" "#c397d8" "#70c0b1" "#424242"))
- '(custom-enabled-themes (quote (sanityinc-tomorrow-day)))
- '(custom-safe-themes
-   (quote
-    ("82d2cac368ccdec2fcc7573f24c3f79654b78bf133096f9b40c20d97ec1d8016" "628278136f88aa1a151bb2d6c8a86bf2b7631fbea5f0f76cba2a0079cd910f7d" "4cf3221feff536e2b3385209e9b9dc4c2e0818a69a1cdb4b522756bcdf4e00a4" "1b8d67b43ff1723960eb5e0cba512a2c7a2ad544ddb2533a90101fd1852b426e" "bb08c73af94ee74453c90422485b29e5643b73b05e8de029a6909af6a3fb3f58" default)))
- '(ecb-options-version "2.40")
- '(ecb-source-path (quote (("/" "/"))))
- '(fci-rule-color "#424242")
- '(git-gutter:handled-backends (quote (svn hg git)))
- '(org-agenda-files
-   (quote
-    ("~/org/knowledge/writing/report11/report11.org" "~/org/gtd.org" "~/org/datetree.org")))
- '(org-archive-location "~/org/datetree.org::datetree/")
- '(safe-local-variable-values (quote ((lentic-init . lentic-orgel-org-init))))
- '(session-use-package t nil (session))
- '(vc-annotate-background nil)
- '(vc-annotate-color-map
-   (quote
-    ((20 . "#d54e53")
-     (40 . "#e78c45")
-     (60 . "#e7c547")
-     (80 . "#b9ca4a")
-     (100 . "#70c0b1")
-     (120 . "#7aa6da")
-     (140 . "#c397d8")
-     (160 . "#d54e53")
-     (180 . "#e78c45")
-     (200 . "#e7c547")
-     (220 . "#b9ca4a")
-     (240 . "#70c0b1")
-     (260 . "#7aa6da")
-     (280 . "#c397d8")
-     (300 . "#d54e53")
-     (320 . "#e78c45")
-     (340 . "#e7c547")
-     (360 . "#b9ca4a"))))
- '(vc-annotate-very-old-color nil))
-
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(window-numbering-face ((t (:foreground "DeepPink" :underline "DeepPink" :weight bold))) t))
-
-
-(put 'erase-buffer 'disabled nil)
-(setq gc-cons-threshold best-gc-cons-threshold)
-
-;;关闭备份
-
-(setq make-backup-files nil)
-
-;;开启cua模式
-(cua-mode 1)
-
-;;开启undo-tree-mode
-(global-undo-tree-mode)
-
-;;最大化屏幕
-(global-set-key [f12] 'my-maximized)
-(defun my-maximized ()
-(interactive)
-(x-send-client-message nil 0 nil "_NET_WM_STATE" 32 '(2 "_NET_WM_STATE_MAXIMIZED_HORZ" 0)) (x-send-client-message nil 0 nil "_NET_WM_STATE" 32 '(2 "_NET_WM_STATE_MAXIMIZED_VERT" 0))
- )
-
-;;关闭wich-key-mode提示
-(setq which-key-mode nil)
-
-;;;;;;;;;;;;;;;;;
-;auctex
-;;;;;;;;;;;;;;;;;
-
-
-(setq TeX-auto-save t)
-(setq TeX-parse-self t)
-(setq-default TeX-master nil)
-(mapc (lambda (mode)
-(add-hook 'LaTeX-mode-hook mode))
-      (list 'auto-complete-mode
-   'auto-fill-mode
-   'LaTeX-math-mode
-   'turn-on-reftex
-   'linum-mode))
-(add-hook 'LaTeX-mode-hook
-          (lambda ()
-            (setq TeX-auto-untabify t     ; remove all tabs before saving
-                  TeX-engine 'xetex       ; use xelatex default
-                  TeX-show-compilation t) ; display compilation windows
-            (TeX-global-PDF-mode t)       ; PDF mode enable, not plain
-            (setq TeX-save-query nil)
-            (imenu-add-menubar-index)
-            (define-key LaTeX-mode-map (kbd "TAB") 'TeX-complete-symbol)))
-; set pdf view tool
-(setq TeX-view-program-list '(("Evince" "evince %o")))
-(cond
- ((eq system-type 'windows-nt)
-  (add-hook 'LaTeX-mode-hook
-            (lambda ()
-              (setq TeX-view-program-selection '((output-pdf "SumatraPDF")
-                                                 (output-dvi "Yap"))))))
-
- ((eq system-type 'gnu/linux)
-  (add-hook 'LaTeX-mode-hook
-            (lambda ()
-              (setq TeX-view-program-selection '((output-pdf "Evince")
-                                                 (output-dvi "Evince")))))))
-; XeLaTeX
-(add-hook 'LaTeX-mode-hook (lambda()
-    (add-to-list 'TeX-command-list '("XeLaTeX" "%`xelatex%(mode)%' %t" TeX-run-TeX nil t))
-    (setq TeX-command-default "XeLaTeX")
-    (setq TeX-save-query  nil )
-    (setq TeX-show-compilation t)
-    ))
-
-(setenv "PATH" (concat (getenv "PATH") ":/usr/local/texlive/2015/bin/x86_64-linux"))  
-(setq exec-path (append exec-path '("/usr/local/texlive/2015/bin/x86_64-linux"))) 
 
 ;;; Local Variables:
 ;;; no-byte-compile: t
 ;;; End:
+
+
+
 
