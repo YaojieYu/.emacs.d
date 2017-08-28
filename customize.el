@@ -14,7 +14,8 @@
 
 ;;undo-tree-mode
 (global-undo-tree-mode)
-
+;; artbolocks-mode
+(artbollocks-mode nil)
 ;;maximize-window
 (global-set-key [f12] 'my-maximized)
 (defun my-maximized ()

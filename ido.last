@@ -30,9 +30,10 @@
 ;; ----- ido-work-directory-list -----
 (
  "/home/yu/org/"
+ "/home/yu/org/knowledge/writing/Articles/1/"
+ "/home/yu/org/knowledge/literature/"
  "/home/yu/.emacs.d/"
  "/home/yu/.emacs.d/lisp/"
- "/home/yu/org/knowledge/writing/Articles/1/"
  "/home/yu/org/knowledge/writing/bib/"
  "/home/yu/org/knowledge/writing/report12/"
  "/home/yu/"
@@ -46,29 +47,33 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "datetree.org"
  "gtd.org"
+ "paper.tex"
+ "papers.org"
  "init.el"
  "init-auctex.el"
  "ams-sample.tex"
  "test.org"
  "knowlege.org"
  "test.tex"
- "report12.org"
- "report12.tex"
- "report11.org"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/yu/org/" (22920 14021 802162 999000) "./" ".gitignore" "knowlege.org" "gtd.org" "datetree.org" "document/" "../" "knowledge/" "ltxpng/" ".git/")
+ ("/home/yu/org/" (22947 52931 520705 198000) "./" ".gitignore" "knowlege.org" "gtd.org" "datetree.org" "document/" "../" "knowledge/" "gtd.org_archive" "ltxpng/" ".git/")
 
- ("/home/yu/" (22920 13581 817533 261000) "FlurryPP/" ".viminfo" ".aspell.en.prepl" ".lyx/" ".wine/" ".nvm/" ".emacs.d/" ".sogouinput/" "OpenFOAM-4.x/" ".npm/" "Qt/" ".Xauthority" ".Mathematica/" "RB Flow/" ".xsession-errors" ".backups/" ".ecb-tip-of-day.el" ".oracle_jre_usage/" ".launcher.16.1.0.ini" ".wiznote/" ".newsrc.eld" ".gmsh-errors" ".pip/" ".allinea/" ".clion11/" ".profile" ".bookmarks" ".sangfor/" ".bash_logout" ".visit/" ".macromedia/" "fandol/" ".qt/" ".gnuplot_history" ".texlive2015/" ".texmf-var/" ".sudo_as_admin_successful" ".cache/" ".bash_history" ".gem/" ".xdvirc" ".config/" ".bashrc~" ".codeblocks/" ".w3m/" ".eclipse/" ".adobe/" ".gconf/" ".bashrc" ".python_history" ".matlab/" ".presage/" ".gnupg/" ".#date.org" ".yEd/" ".fonts/" ".aspell.en.pws" ".pki/" ".jupyter/" ".hplip/" ".subversion/" ".mplayer/" "org/" ".gnome2_private/" "HiFiLES-solver/" ".gnus" ".gnome/" "Documents/" ".gitconfig" ".intel/" ".ssh/" ".history" ".authinfo" ".notes" ".emacs.keyfreq" ".ICEauthority" ".pam_environment" ".thunderbird/" ".local/" "CFD/" ".dbus/" ".kde/" ".octave_hist" ".newsrc" ".gstreamer-0.10/" ".xinputrc" "rjsupplicant/" ".ansys/" "ThirdParty-4.x/" ".fltk/" ".ddd/" ".swt/" ".xsel.log" ".gmshrc" "Trash/" "HiFiLES-solver-orgin/" "Downloads/" "FlurryPP-master/" ".nutstore/" ".xsession-errors.old" ".nv/" ".lantern/" ".gnome2/" ".java/" ".zotero/" ".kingsoft/" ".byteexec/" ".mozilla/" "working/" ".flexlmrc" ".pdf" ".pencil/" ".smex-items" ".ipython/" "FR-LES/" ".designer/" "../" "./")
+ ("/home/yu/" (22932 61576 971430 602000) "FlurryPP/" ".viminfo" ".aspell.en.prepl" ".lyx/" ".wine/" ".nvm/" ".emacs.d/" ".sogouinput/" "OpenFOAM-4.x/" ".npm/" "Qt/" ".Xauthority" ".Mathematica/" "RB Flow/" ".xsession-errors" ".backups/" ".ecb-tip-of-day.el" ".oracle_jre_usage/" ".launcher.16.1.0.ini" ".wiznote/" ".newsrc.eld" ".gmsh-errors" ".pip/" ".allinea/" ".clion11/" ".profile" ".bookmarks" ".sangfor/" ".bash_logout" ".visit/" ".macromedia/" "fandol/" ".qt/" ".gnuplot_history" ".texlive2015/" ".texmf-var/" ".sudo_as_admin_successful" ".cache/" ".bash_history" ".gem/" ".xdvirc" ".config/" ".bashrc~" ".codeblocks/" ".w3m/" ".eclipse/" ".adobe/" ".gconf/" ".bashrc" ".python_history" ".matlab/" ".presage/" ".gnupg/" ".#date.org" ".yEd/" ".fonts/" ".aspell.en.pws" ".pki/" ".jupyter/" ".hplip/" ".subversion/" ".mplayer/" "org/" ".gnome2_private/" "HiFiLES-solver/" ".gnus" ".gnome/" "Documents/" ".gitconfig" ".intel/" ".ssh/" ".history" ".authinfo" ".notes" ".emacs.keyfreq" ".ICEauthority" ".pam_environment" ".thunderbird/" ".local/" "宽客人生.pdf" "CFD/" ".dbus/" ".kde/" ".octave_hist" "《河神·鬼水怪谈》.epub" ".newsrc" ".gstreamer-0.10/" ".xinputrc" "rjsupplicant/" ".ansys/" "ThirdParty-4.x/" ".fltk/" ".ddd/" ".swt/" ".xsel.log" ".gmshrc" "Trash/" "HiFiLES-solver-orgin/" "Downloads/" "FlurryPP-master/" ".nutstore/" ".xsession-errors.old" ".nv/" ".lantern/" ".gnome2/" ".java/" ".zotero/" ".kingsoft/" ".byteexec/" ".mozilla/" "working/" ".flexlmrc" ".pdf" ".pencil/" ".smex-items" ".ipython/" "FR-LES/" ".designer/" "../" "./")
 
- ("/home/yu/.emacs.d/" (22916 27251 38525 381000) "./" ".gitignore" "auto-save-list/" "ido.last" "init.el" "snippets/" "company-statistics-cache.el" "elpa/" ".org-id-locations" "site-lisp/" "recentf" ".gitignore~" "history" "misc/" "eshell/" "../" ".session" "tramp" "url/" "lisp/" ".git/" "LICENSE")
+ ("/home/yu/org/knowledge/literature/" (22920 14466 55002 242000) "helm-bibtex-notes/" "./" "papers/" "bib/" "../" "papers.org")
 
- ("/home/yu/.emacs.d/lisp/" (22916 27135 536530 257000) "init-windows.el" "init-doxygen.el" "init-sessions.el" "xcscope.el" "init-org-ref.el~" "init-hs-minor-mode.el" "init-python-mode.el" "./" "init-workgroups2.el" "init-markdown.el" "init-artbollocks-mode.el" "init-httpd.el" "init-which-func.el" "init-misc-lazy.el" "init-elpa.el" "init-semantic.el" "init-cc-mode.el" "init-spelling.el" "init-emacs-w3m.el" "init-uniquify.el" "init-auctex.el" "init-utils.el" "init-lua-mode.el" "init-ctags.el" "init-org.el" "init-org-mime.el" "init-flymake.el" "init-exec-path.el" "init-ido.el" "init-git.el" "init-fonts.el" "init-modeline.el" "init-sh.el" "init-gnus.el" "init-lisp.el" "init-clipboard.el" "init-emacspeak.el" "init-bbdb.el" "init-linum-mode.el" "cdlatex.el" "init-cperl-mode.el" "init-web-mode.el" "init-keyfreq.el" "init-crontab.el" "init-xterm.el" "init-company.el" "init-ibuffer.el" "init-haskell.el" "../" "init-ivy.el" "init-hippie-expand.el" "init-smex.el" "init-writting.el" "init-compat.el" "init-zencoding-mode.el" "init-hydra.el" "init-locales.el" "init-term-mode.el" "init-org-ref.el" "init-csv.el" "init-yasnippet.el" "init-moz.el" "init-elisp.el" "init-site-lisp.el" "init-gui-frames.el" "init-gud.el" "init-gtags.el" "init-misc.el" "init-frame-hooks.el" "init-slime.el")
+ ("/home/yu/org/knowledge/" (22916 30405 65393 353000) "physics/" "writing/" "./" "math/" "English/" "Papers/" "Book/" "../" "CFD/" "High_Order_Method/" "literature/" "CS/")
 
- ("/home/yu/org/knowledge/writing/bib/" (22916 16565 173029 423000) "auto/" "test.org" "./" "research.bib~" "research.bib" "test.tex" "test.pdf" "../")
+ ("/home/yu/org/knowledge/writing/bib/" (22916 31665 3419 357000) "auto/" "test.org" "./" "research.bib~" "research.bib" "test.tex" "test.pdf" "../")
+
+ ("/home/yu/.emacs.d/lisp/" (22920 14165 955721 428000) "init-windows.el" "init-doxygen.el" "init-sessions.el" "xcscope.el" "init-python-mode.el" "./" "init-workgroups2.el" "init-markdown.el" "init-artbollocks-mode.el" "init-httpd.el" "init-which-func.el" "init-elpa.el" "init-semantic.el" "init-cc-mode.el" "init-spelling.el" "init-emacs-w3m.el" "init-uniquify.el" "init-auctex.el" "init-utils.el" "init-lua-mode.el" "init-ctags.el" "init-org.el" "init-org-mime.el" "init-flymake.el" "init-ido.el" "init-git.el" "init-fonts.el" "init-modeline.el" "init-sh.el" "init-gnus.el" "init-lisp.el" "init-clipboard.el" "init-emacspeak.el" "init-bbdb.el" "init-linum-mode.el" "cdlatex.el" "init-cperl-mode.el" "init-web-mode.el" "init-crontab.el" "init-xterm.el" "init-company.el" "init-ibuffer.el" "init-haskell.el" "../" "init-ivy.el" "init-hippie-expand.el" "init-smex.el" "init-writting.el" "init-compat.el" "init-zencoding-mode.el" "init-hydra.el" "init-locales.el" "init-term-mode.el" "init-org-ref.el" "init-csv.el" "init-yasnippet.el" "init-elisp.el" "init-site-lisp.el" "init-gui-frames.el" "init-gud.el" "init-gtags.el" "init-misc.el" "init-frame-hooks.el" "init-slime.el")
+
+ ("/home/yu/.emacs.d/" (22920 14194 544032 85000) "./" ".gitignore" "auto-save-list/" "ido.last" "init.el" "snippets/" "company-statistics-cache.el" "customize.el" "elpa/" ".org-id-locations" "site-lisp/" "recentf" "places" ".gitignore~" "history" "misc/" "eshell/" "../" ".session" "tramp" "url/" "lisp/" ".git/" "LICENSE")
 
  ("/home/yu/org/knowledge/writing/Articles/1/" (22915 54537 526510 222000) "auto/" "data/" "rb.bib" "ams-sample.aux" "./" "springer.eps" "ams-sample.pdf" "knowlege.org" "paper.log" "ams-sample.log" "paper.tex" "../" "paper.aux" "ams-sample.tex" "slashbox.sty" "paper.blg" "paper.bbl" "figure/" "paper.pdf" "linnum.sty")
 
@@ -97,8 +102,6 @@
  ("/home/yu/FlurryPP/" (22849 13631 890437 916000) "Flurry.pro" "planning" "./" ".gitignore" "include/" "README.md" "Flurry.pro.user.18" "Makefile" "dataPlotter.m" "Flurry.pro.user.3.2-pre1" "Flurry.cbp" "src/" "tests/" "../" "Flurry.pro.user" "lib/" "bin/" "configfiles/" ".git/" "obj/" "LICENSE")
 
  ("/home/yu/FR-LES/include/" (22849 13806 461223 327000) "mesh.hpp" "ele.hpp" "matrix.hpp" "output.hpp" "face.hpp" "./" "mpiFace.hpp" "superMesh.hpp" "solver.hpp" "geo.hpp" "boundFace.hpp" "flux.hpp" "multigrid.hpp" "points.hpp" "overFace.hpp" "global.hpp" "funcs.hpp" "polynomials.hpp" "frles.hpp" "solver.hpp~" "input.hpp" "../" "overComm.hpp" "operators.hpp" "error.hpp" "intFace.hpp" "flux.hpp~")
-
- ("/home/yu/org/knowledge/" (22824 58890 227241 942000) "physics/" "writing/" "./" "math/" "English/" "Papers/" "Book/" "../" "CFD/" "High_Order_Method/" "CS/")
 
  ("/home/yu/working/Preconditioning/lid-driven/Flurry/Ma0.01/" (22699 45904 39960 615000) "48/" "128/" "16/" "64/" "32/" "../" "./")
 
