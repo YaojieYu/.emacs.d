@@ -22,3 +22,10 @@
 (interactive)
 (x-send-client-message nil 0 nil "_NET_WM_STATE" 32 '(2 "_NET_WM_STATE_MAXIMIZED_HORZ" 0)) (x-send-client-message nil 0 nil "_NET_WM_STATE" 32 '(2 "_NET_WM_STATE_MAXIMIZED_VERT" 0))
  )
+
+;;imaxima
+(add-to-list 'load-path "/usr/local/maxima-5.40.0/interfaces/emacs/imaxima")
+(autoload 'imaxima "imaxima" "Image support for Maxima." t)
+(autoload 'imath-mode "imath" "Imath mode for math formula input" t)
+
+
