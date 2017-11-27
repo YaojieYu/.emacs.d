@@ -28,4 +28,12 @@
 (autoload 'imaxima "imaxima" "Image support for Maxima." t)
 (autoload 'imath-mode "imath" "Imath mode for math formula input" t)
 
+;;hexo
+(require 'hexo)
+
+(defun hexo-my-blog ()
+    (interactive)
+    (hexo "~/org/kownledge/blog/"))
+(setq hexo-posix-compatible-shell-file-path "/bin/bash")
+
 

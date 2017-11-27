@@ -189,7 +189,7 @@
   ))
 
 ;; Agenda views
-(setq-default org-agenda-clockreport-parameter-plist '(:link t :maxlevel 3))
+(setq-default org-agenda-clockreport-parameter-plist '(:link t :maxlevel 4))
 (global-set-key (kbd "C-c a") 'org-agenda)
 
 ;; 中文换行问题  

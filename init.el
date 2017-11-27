@@ -101,7 +101,7 @@
   (require 'init-semantic)
   (require 'xcscope)
   (require 'cdlatex)
-
+  (require 'init-exec-path-from-shell)
   (when (require 'time-date nil t)
     (message "Emacs startup time: %d seconds."
              (time-to-seconds (time-since emacs-load-start-time))))
@@ -121,15 +121,15 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-enabled-themes (quote (sanityinc-tomorrow-bright)))
+ '(custom-enabled-themes (quote (sanityinc-tomorrow-day)))
  '(custom-safe-themes
    (quote
-    ("1b8d67b43ff1723960eb5e0cba512a2c7a2ad544ddb2533a90101fd1852b426e" default)))
+    ("bb08c73af94ee74453c90422485b29e5643b73b05e8de029a6909af6a3fb3f58" "1b8d67b43ff1723960eb5e0cba512a2c7a2ad544ddb2533a90101fd1852b426e" default)))
  '(git-gutter:handled-backends (quote (svn hg git)))
  '(org-agenda-files
    (quote
-    ("~/org/knowlege.org" "~/org/datetree.org" "~/org/gtd.org" "~/org/knowledge/literature/papers.org")))
- '(org-archive-location "~/org/datetree.org::datetree/")
+    ("~/org/gtd/knowlege.org" "~/org/gtd/datetree.org" "~/org/gtd/gtd.org")))
+ '(org-archive-location "~/org/gtd/datetree.org::datetree/")
  '(session-use-package t nil (session)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
